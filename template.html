@@ -1,0 +1,421 @@
+<title>Korea Digital Finance Alliance Map</title>
+<style>
+  :root {
+    --bg: #12151C; --panel: #1A1E27; --panel-2: #212633; --line: #2B303C;
+    --ink: #E9E7DF; --ink-2: #959BA8; --ink-3: #5F6672;
+    --sc: #F2A93B; --cu: #4D9FE8; --to: #82BC66; --ma: #E25B5B;
+    --bank: #9089E6; --tech: #38B58C; --cn: #E0693C; --sec: #E06B95; --gl: #8A8F99;
+    --mono: "SF Mono", ui-monospace, Menlo, Consolas, monospace;
+    --serif: Palatino, "Palatino Linotype", Georgia, "Apple SD Gothic Neo", serif;
+  }
+  * { box-sizing: border-box; }
+  body { background: var(--bg); color: var(--ink); font: 15px/1.6 -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", Helvetica, Arial, sans-serif; margin: 0; }
+  a { color: var(--cu); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--line); padding: 20px 0 16px; }
+  .mast { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 20px; }
+  .mast h1 { font-family: var(--serif); font-weight: 400; font-size: 26px; margin: 0; letter-spacing: 0.2px; }
+  .mast h1 em { font-style: italic; color: var(--sc); }
+  .stamp { font-family: var(--mono); font-size: 12px; color: var(--ink-2); }
+  .stamp b { color: var(--to); font-weight: 500; }
+  .langsw { margin-left: auto; display: flex; gap: 0; border: 1px solid var(--line); border-radius: 7px; overflow: hidden; }
+  .langsw button { background: none; border: none; color: var(--ink-3); font-family: var(--mono); font-size: 11.5px; padding: 4px 10px; cursor: pointer; }
+  .langsw button.on { background: var(--panel-2); color: var(--ink); }
+  .langsw button:focus-visible { outline: 1px solid var(--ink-2); outline-offset: -1px; }
+  .sub { color: var(--ink-2); font-size: 13px; margin: 6px 0 0; max-width: 70ch; }
+  .board { display: grid; grid-template-columns: 1fr 300px; gap: 16px; padding: 16px 0; }
+  @media (max-width: 900px) { .board { grid-template-columns: 1fr; } }
+  .stage { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+  .stage svg { display: block; width: 100%; touch-action: none; cursor: grab; }
+  .hint { position: absolute; left: 12px; bottom: 10px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); pointer-events: none; }
+  .zoombtns { position: absolute; right: 10px; top: 10px; display: flex; flex-direction: column; gap: 6px; }
+  .zoombtns button { width: 30px; height: 30px; border-radius: 7px; border: 1px solid var(--line); background: var(--panel-2); color: var(--ink-2); font-size: 16px; cursor: pointer; line-height: 1; }
+  .zoombtns button:hover, .zoombtns button:focus-visible { color: var(--ink); border-color: var(--ink-3); outline: none; }
+  .tip { position: absolute; max-width: 300px; background: var(--panel-2); border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; font-size: 12.5px; color: var(--ink-2); pointer-events: none; display: none; z-index: 5; box-shadow: 0 6px 24px rgba(0,0,0,.45); }
+  .tip b { color: var(--ink); font-weight: 500; }
+  .tip .tline { display: flex; align-items: center; gap: 6px; margin: 3px 0; font-family: var(--mono); font-size: 11px; }
+  .rail { display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; }
+  .card h2 { font-size: 11px; font-weight: 600; letter-spacing: 1.2px; text-transform: uppercase; color: var(--ink-3); margin: 0 0 10px; font-family: var(--mono); }
+  .filters { display: flex; flex-direction: column; gap: 6px; }
+  .fbtn { display: flex; align-items: center; gap: 8px; background: none; border: 1px solid transparent; border-radius: 7px; padding: 5px 8px; color: var(--ink-2); font-size: 13px; cursor: pointer; text-align: left; width: 100%; font-family: inherit; }
+  .fbtn:hover, .fbtn:focus-visible { border-color: var(--line); outline: none; }
+  .fbtn.off { opacity: 0.35; }
+  .fbtn .sw { width: 16px; height: 3px; border-radius: 2px; flex: none; }
+  .fbtn .dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .fbtn .count { margin-left: auto; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  input[type="search"] { width: 100%; background: var(--panel-2); border: 1px solid var(--line); border-radius: 7px; color: var(--ink); padding: 8px 10px; font-size: 13px; font-family: inherit; }
+  input[type="search"]:focus { outline: none; border-color: var(--ink-3); }
+  #detail p { margin: 0 0 10px; font-size: 13px; color: var(--ink-2); }
+  #detail .dhead { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 8px; }
+  #detail .dname { font-size: 17px; font-weight: 600; color: var(--ink); }
+  #detail .chip { font-family: var(--mono); font-size: 10.5px; padding: 2px 8px; border-radius: 99px; border: 1px solid var(--line); color: var(--ink-2); }
+  #detail .rel { display: flex; gap: 8px; padding: 5px 0; font-size: 12.5px; color: var(--ink-2); border-top: 1px solid var(--line); align-items: baseline; }
+  #detail .rel:first-of-type { border-top: none; }
+  #detail .rel .sw { width: 10px; height: 3px; border-radius: 2px; flex: none; align-self: center; }
+  #detail .rel b { color: var(--ink); font-weight: 500; flex: none; }
+  .below { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 4px 0 40px; }
+  @media (max-width: 900px) { .below { grid-template-columns: 1fr; } }
+  .log { font-size: 13px; }
+  .log .entry { display: flex; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); }
+  .log .entry:first-child { border-top: none; }
+  .log .d { font-family: var(--mono); font-size: 11.5px; color: var(--sc); flex: none; padding-top: 2px; }
+  .log .n { color: var(--ink-2); }
+  .srcs { font-size: 12.5px; }
+  .srcs li { margin: 4px 0; color: var(--ink-3); }
+  .srcs ul { margin: 0; padding-left: 18px; }
+  footer { border-top: 1px solid var(--line); padding: 14px 0 30px; font-family: var(--mono); font-size: 11px; color: var(--ink-3); }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+</style>
+
+<header>
+  <div class="wrap">
+    <div class="mast">
+      <h1><span id="t1"></span><em id="t2"></em></h1>
+      <span class="stamp"><span id="tUpdated"></span> <b id="stamp"></b> &middot; <span id="tWeekly"></span></span>
+      <div class="langsw" role="group" aria-label="Language">
+        <button id="lang-en">EN</button><button id="lang-ko">한국어</button>
+      </div>
+    </div>
+    <p class="sub" id="tSub"></p>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="board">
+    <div class="stage" id="stage">
+      <svg id="net" viewBox="0 0 900 760" role="img" aria-label="Alliance network graph"></svg>
+      <div class="zoombtns">
+        <button id="zin" aria-label="Zoom in">+</button>
+        <button id="zout" aria-label="Zoom out">&minus;</button>
+        <button id="zfit" aria-label="Reset view" style="font-size:11px">fit</button>
+      </div>
+      <div class="tip" id="tip"></div>
+      <div class="hint" id="tHint"></div>
+    </div>
+    <div class="rail">
+      <div class="card">
+        <h2 id="tFind"></h2>
+        <input type="search" id="q" />
+      </div>
+      <div class="card">
+        <h2 id="tEtype"></h2>
+        <div class="filters" id="efilters"></div>
+      </div>
+      <div class="card">
+        <h2 id="tNtype"></h2>
+        <div class="filters" id="nfilters"></div>
+      </div>
+      <div class="card" id="detail"></div>
+    </div>
+  </div>
+
+  <div class="below">
+    <div class="card log">
+      <h2 id="tLog"></h2>
+      <div id="log"></div>
+    </div>
+    <div class="card srcs">
+      <h2 id="tSrc"></h2>
+      <ul id="srcs"></ul>
+    </div>
+  </div>
+</div>
+
+<footer><div class="wrap" id="tFoot"></div></footer>
+
+<script>
+const DATA = /*__DATA__*/;
+
+const L = {
+  en: {
+    t1: "Korean digital finance ", t2: "alliance map",
+    updated: "last updated", weekly: "refreshed weekly",
+    sub: "Who is allied with whom across Korea’s stablecoin, custody, and tokenization race — banks, platforms, securities firms, crypto-native infrastructure, and their global partners. Hover a line for the relationship; click a node for its full dossier.",
+    find: "Find", ph: "Search an institution…", etype: "Alliance type", ntype: "Entity type",
+    dossier: "Dossier", dossierDefault: "Click any node on the map to see who it is allied with and what they are building together.",
+    log: "Changelog", src: "Sources",
+    hint: "drag nodes · scroll to zoom · drag background to pan",
+    ties: "ties", clickFor: "Click for dossier", talks: "in talks",
+    foot: "Compiled from public news reporting. Alliances marked as dashed lines are talks or pending deals, not signed agreements. Not investment advice.",
+    et: { sc: "Stablecoin / payments", cu: "Custody", to: "Tokenization / STO", ma: "Acquisition / stake" },
+    cat: { bank: "Bank / financial group", tech: "Tech / platform", pb: "Platform with banking arm", cn: "Crypto-native / infra", sec: "Securities / asset mgmt", gl: "Global partner", hub: "Consortium hub" }
+  },
+  ko: {
+    t1: "한국 디지털 금융 ", t2: "동맹 지도",
+    updated: "최종 업데이트", weekly: "매주 갱신",
+    sub: "국내 스테이블코인·커스터디·토큰증권 경쟁에서 누가 누구와 손잡았는지 — 은행, 플랫폼, 증권사, 크립토 인프라, 그리고 글로벌 파트너까지. 선에 마우스를 올리면 관계가, 노드를 클릭하면 상세 정보가 표시됩니다.",
+    find: "검색", ph: "기관명 검색…", etype: "동맹 유형", ntype: "기관 유형",
+    dossier: "상세 정보", dossierDefault: "지도에서 노드를 클릭하면 어떤 기관과 손잡고 무엇을 만드는지 볼 수 있습니다.",
+    log: "업데이트 기록", src: "출처",
+    hint: "노드 드래그 · 스크롤 줌 · 배경 드래그로 이동",
+    ties: "건", clickFor: "클릭하여 상세 보기", talks: "협의 중",
+    foot: "공개 보도를 바탕으로 작성. 점선은 협의 중이거나 미확정 딜입니다. 투자 조언이 아닙니다.",
+    et: { sc: "스테이블코인/결제", cu: "커스터디(수탁)", to: "토큰증권(STO)", ma: "인수/지분투자" },
+    cat: { bank: "은행/금융그룹", tech: "테크/플랫폼", pb: "은행 보유 플랫폼", cn: "크립토 네이티브/인프라", sec: "증권/자산운용", gl: "글로벌 파트너", hub: "컨소시엄 허브" }
+  }
+};
+let lang = localStorage.getItem("kmap-lang") || ((navigator.language || "").toLowerCase().startsWith("ko") ? "ko" : "en");
+
+const EC = { sc: "#F2A93B", cu: "#4D9FE8", to: "#82BC66", ma: "#E25B5B" };
+const CC = { bank: "#9089E6", tech: "#38B58C", pb: "#38B58C", cn: "#E0693C", sec: "#E06B95", gl: "#8A8F99", hub: "#8A8F99" };
+const W = 900, H = 760;
+
+function esc(x) { return String(x).replace(/&/g, "&amp;").replace(/</g, "&lt;"); }
+function hash(s) { let h = 2166136261; for (let i = 0; i < s.length; i++) { h ^= s.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0) / 4294967295; }
+function lb(n) { return lang === "ko" && n.labelKo ? n.labelKo : n.label; }
+function nd(n) { return lang === "ko" && n.descKo ? n.descKo : n.desc; }
+function ed(e) { return lang === "ko" && e.descKo ? e.descKo : e.desc; }
+
+const nodes = {}, deg = {}, adj = {};
+const seeds = { bank: [230, 300], tech: [560, 480], pb: [560, 150], cn: [480, 300], sec: [420, 600], gl: [680, 350], hub: [230, 300] };
+DATA.nodes.forEach(n => {
+  const s = seeds[n.cat] || [450, 380];
+  nodes[n.id] = { ...n, x: s[0] + (hash(n.id) - 0.5) * 340, y: s[1] + (hash(n.id + "y") - 0.5) * 340, vx: 0, vy: 0 };
+  deg[n.id] = 0; adj[n.id] = new Set();
+});
+DATA.edges.forEach(e => { deg[e.s]++; deg[e.t]++; adj[e.s].add(e.t); adj[e.t].add(e.s); });
+
+const svg = document.getElementById("net"), NS = "http://www.w3.org/2000/svg";
+const stage = document.getElementById("stage"), tip = document.getElementById("tip");
+const root = document.createElementNS(NS, "g"); svg.appendChild(root);
+const eg = document.createElementNS(NS, "g"), hg = document.createElementNS(NS, "g"), ng = document.createElementNS(NS, "g");
+root.appendChild(eg); root.appendChild(hg); root.appendChild(ng);
+
+let view = { x: 0, y: 0, k: 1 };
+function applyView() { root.setAttribute("transform", "translate(" + view.x + "," + view.y + ") scale(" + view.k + ")"); }
+
+const eTypeOn = { sc: true, cu: true, to: true, ma: true };
+const nCatOn = { bank: true, tech: true, pb: true, cn: true, sec: true, gl: true, hub: true };
+let hoveredNode = null, hoveredEdge = null, query = "", selectedId = null;
+
+const eEls = DATA.edges.map((e, i) => {
+  const l = document.createElementNS(NS, "line");
+  l.setAttribute("stroke", EC[e.type]); l.setAttribute("stroke-linecap", "round");
+  if (!e.solid) l.setAttribute("stroke-dasharray", "6 5");
+  eg.appendChild(l);
+  const h = document.createElementNS(NS, "line");
+  h.setAttribute("stroke", "#000"); h.setAttribute("stroke-opacity", "0"); h.setAttribute("stroke-width", 14); h.style.cursor = "help";
+  hg.appendChild(h);
+  h.addEventListener("pointerenter", ev => { hoveredEdge = i; paint(); showEdgeTip(e, ev); });
+  h.addEventListener("pointermove", ev => posTip(ev));
+  h.addEventListener("pointerleave", () => { hoveredEdge = null; paint(); tip.style.display = "none"; });
+  return { l, h };
+});
+
+const nEls = {}, lEls = {};
+DATA.nodes.forEach(n => {
+  const d = nodes[n.id];
+  d.r = Math.min(7 + deg[n.id] * 1.15, 20);
+  const g = document.createElementNS(NS, "g"); g.style.cursor = "pointer";
+  let sh;
+  if (n.cat === "hub") {
+    sh = document.createElementNS(NS, "rect");
+    sh.setAttribute("width", d.r * 2); sh.setAttribute("height", d.r * 2); sh.setAttribute("rx", 6);
+    sh.setAttribute("fill", "var(--panel-2)"); sh.setAttribute("stroke", "#8A8F99"); sh.setAttribute("stroke-dasharray", "4 3"); sh.setAttribute("stroke-width", 1.4);
+  } else {
+    sh = document.createElementNS(NS, "circle");
+    sh.setAttribute("r", d.r); sh.setAttribute("fill", CC[n.cat]);
+    sh.setAttribute("stroke", n.cat === "pb" ? "#9089E6" : "#12151C");
+    sh.setAttribute("stroke-width", n.cat === "pb" ? 3 : 1.5);
+  }
+  const t = document.createElementNS(NS, "text");
+  t.setAttribute("font-size", "12"); t.setAttribute("text-anchor", "middle");
+  t.setAttribute("fill", "#B9BEC9"); t.style.pointerEvents = "none"; t.style.userSelect = "none";
+  g.appendChild(sh); g.appendChild(t); ng.appendChild(g);
+  nEls[n.id] = g; lEls[n.id] = t; d.sh = sh;
+  g.addEventListener("pointerenter", ev => { hoveredNode = n.id; paint(); showNodeTip(d, ev); });
+  g.addEventListener("pointermove", ev => posTip(ev));
+  g.addEventListener("pointerleave", () => { hoveredNode = null; paint(); tip.style.display = "none"; });
+  g.addEventListener("pointerdown", ev => { ev.preventDefault(); ev.stopPropagation(); drag = d; dragMoved = false; alpha = Math.max(alpha, 0.2); g.setPointerCapture(ev.pointerId); });
+  g.addEventListener("pointerup", () => { if (!dragMoved) { selectedId = n.id; renderDetail(); } drag = null; });
+});
+
+function edgeVisible(e) { return eTypeOn[e.type] && nCatOn[nodes[e.s].cat] && nCatOn[nodes[e.t].cat]; }
+function nodeVisible(n) { return nCatOn[n.cat]; }
+function matchQ(n) { return query && (n.label.toLowerCase().includes(query) || (n.labelKo || "").toLowerCase().includes(query)); }
+
+function paint() {
+  DATA.edges.forEach((e, i) => {
+    const p = eEls[i], vis = edgeVisible(e);
+    p.l.style.display = vis ? "" : "none"; p.h.style.display = vis ? "" : "none";
+    if (!vis) return;
+    let op = 0.55, w = e.solid ? 1.9 : 1.5;
+    if (hoveredEdge != null) { op = hoveredEdge === i ? 1 : 0.08; w = hoveredEdge === i ? 3.2 : w; }
+    else if (hoveredNode) { op = (e.s === hoveredNode || e.t === hoveredNode) ? 0.95 : 0.06; }
+    else if (query) { op = 0.12; }
+    p.l.setAttribute("stroke-opacity", op); p.l.setAttribute("stroke-width", w);
+  });
+  DATA.nodes.forEach(n => {
+    const g = nEls[n.id], vis = nodeVisible(n);
+    g.style.display = vis ? "" : "none";
+    if (!vis) return;
+    let op = 1;
+    if (hoveredEdge != null) op = (DATA.edges[hoveredEdge].s === n.id || DATA.edges[hoveredEdge].t === n.id) ? 1 : 0.22;
+    else if (hoveredNode) op = (n.id === hoveredNode || adj[hoveredNode].has(n.id)) ? 1 : 0.15;
+    else if (query) op = matchQ(n) ? 1 : 0.15;
+    g.setAttribute("opacity", op);
+    lEls[n.id].setAttribute("font-weight", (hoveredNode === n.id || matchQ(n)) ? "600" : "400");
+  });
+}
+
+function showEdgeTip(e, ev) {
+  const T = L[lang];
+  tip.innerHTML = "<b>" + esc(lb(nodes[e.s])) + " &harr; " + esc(lb(nodes[e.t])) + "</b>" +
+    '<div class="tline"><span style="width:12px;height:3px;border-radius:2px;background:' + EC[e.type] + '"></span>' + T.et[e.type] + (e.solid ? "" : " &middot; " + T.talks) + "</div>" + esc(ed(e));
+  tip.style.display = "block"; posTip(ev);
+}
+function showNodeTip(d, ev) {
+  const T = L[lang];
+  tip.innerHTML = "<b>" + esc(lb(d)) + "</b><div class='tline'><span style='width:10px;height:10px;border-radius:50%;background:" + CC[d.cat] + "'></span>" + T.cat[d.cat] + " &middot; " + deg[d.id] + " " + T.ties + "</div>" + (nd(d) ? esc(nd(d)) : T.clickFor);
+  tip.style.display = "block"; posTip(ev);
+}
+function posTip(ev) {
+  const b = stage.getBoundingClientRect();
+  let x = ev.clientX - b.left + 14, y = ev.clientY - b.top + 12;
+  if (x > b.width - 310) x = Math.max(6, x - 330);
+  if (y > b.height - 110) y -= 120;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+
+const detail = document.getElementById("detail");
+function renderDetail() {
+  const T = L[lang];
+  if (!selectedId) { detail.innerHTML = "<h2>" + T.dossier + "</h2><p>" + T.dossierDefault + "</p>"; return; }
+  const d = nodes[selectedId];
+  let h = "<h2>" + T.dossier + "</h2><div class='dhead'><span class='dname'>" + esc(lb(d)) + "</span><span class='chip'>" + T.cat[d.cat] + "</span></div>";
+  if (nd(d)) h += "<p>" + esc(nd(d)) + "</p>";
+  h += DATA.edges.filter(e => e.s === selectedId || e.t === selectedId).map(e => {
+    const o = nodes[e.s === selectedId ? e.t : e.s];
+    return "<div class='rel'><span class='sw' style='background:" + EC[e.type] + "'></span><b>" + esc(lb(o)) + "</b><span>" + esc(ed(e)) + (e.solid ? "" : " (" + T.talks + ")") + "</span></div>";
+  }).join("");
+  detail.innerHTML = h;
+}
+
+function renderFilters() {
+  const T = L[lang];
+  const ef = document.getElementById("efilters"); ef.innerHTML = "";
+  Object.keys(EC).forEach(k => {
+    const b = document.createElement("button");
+    b.className = "fbtn" + (eTypeOn[k] ? "" : " off");
+    b.innerHTML = '<span class="sw" style="background:' + EC[k] + '"></span>' + T.et[k] + '<span class="count">' + DATA.edges.filter(e => e.type === k).length + "</span>";
+    b.addEventListener("click", () => { eTypeOn[k] = !eTypeOn[k]; b.classList.toggle("off", !eTypeOn[k]); paint(); });
+    ef.appendChild(b);
+  });
+  const nf = document.getElementById("nfilters"); nf.innerHTML = "";
+  Object.keys(CC).forEach(k => {
+    const count = DATA.nodes.filter(n => n.cat === k).length;
+    if (!count) return;
+    const b = document.createElement("button");
+    b.className = "fbtn" + (nCatOn[k] ? "" : " off");
+    const dot = k === "hub" ? '<span class="dot" style="border:1.5px dashed #8A8F99;border-radius:3px"></span>' :
+      '<span class="dot" style="background:' + CC[k] + (k === "pb" ? ";border:2px solid #9089E6;box-sizing:border-box" : "") + '"></span>';
+    b.innerHTML = dot + T.cat[k] + '<span class="count">' + count + "</span>";
+    b.addEventListener("click", () => { nCatOn[k] = !nCatOn[k]; b.classList.toggle("off", !nCatOn[k]); paint(); });
+    nf.appendChild(b);
+  });
+}
+
+function applyLang() {
+  const T = L[lang];
+  document.documentElement.lang = lang;
+  document.getElementById("t1").textContent = T.t1;
+  document.getElementById("t2").textContent = T.t2;
+  document.getElementById("tUpdated").textContent = T.updated;
+  document.getElementById("tWeekly").textContent = T.weekly;
+  document.getElementById("tSub").textContent = T.sub;
+  document.getElementById("tFind").textContent = T.find;
+  document.getElementById("q").placeholder = T.ph;
+  document.getElementById("q").setAttribute("aria-label", T.find);
+  document.getElementById("tEtype").textContent = T.etype;
+  document.getElementById("tNtype").textContent = T.ntype;
+  document.getElementById("tLog").textContent = T.log;
+  document.getElementById("tSrc").textContent = T.src;
+  document.getElementById("tHint").textContent = T.hint;
+  document.getElementById("tFoot").textContent = T.foot;
+  document.getElementById("lang-en").classList.toggle("on", lang === "en");
+  document.getElementById("lang-ko").classList.toggle("on", lang === "ko");
+  document.getElementById("stamp").textContent = DATA.lastUpdated;
+  document.getElementById("log").innerHTML = DATA.changelog.map(c => '<div class="entry"><span class="d">' + c.date + '</span><span class="n">' + esc(lang === "ko" && c.noteKo ? c.noteKo : c.note) + "</span></div>").join("");
+  document.getElementById("srcs").innerHTML = DATA.sources.map(s => '<li><a href="' + s.url + '" target="_blank" rel="noopener">' + esc(s.title) + "</a></li>").join("");
+  DATA.nodes.forEach(n => { lEls[n.id].textContent = lb(nodes[n.id]); });
+  renderFilters();
+  renderDetail();
+  paint();
+}
+document.getElementById("lang-en").addEventListener("click", () => { lang = "en"; localStorage.setItem("kmap-lang", "en"); applyLang(); });
+document.getElementById("lang-ko").addEventListener("click", () => { lang = "ko"; localStorage.setItem("kmap-lang", "ko"); applyLang(); });
+
+document.getElementById("q").addEventListener("input", ev => { query = ev.target.value.trim().toLowerCase(); paint(); });
+
+let drag = null, dragMoved = false, panning = null, alpha = 1;
+svg.addEventListener("pointerdown", ev => { if (!drag) { panning = { x: ev.clientX, y: ev.clientY, vx: view.x, vy: view.y }; svg.setPointerCapture(ev.pointerId); } });
+svg.addEventListener("pointermove", ev => {
+  const b = svg.getBoundingClientRect(), sc = W / b.width;
+  if (drag) {
+    dragMoved = true;
+    drag.x = ((ev.clientX - b.left) * sc - view.x) / view.k;
+    drag.y = ((ev.clientY - b.top) * sc - view.y) / view.k;
+    drag.vx = drag.vy = 0; alpha = Math.max(alpha, 0.12); kick();
+  } else if (panning) {
+    view.x = panning.vx + (ev.clientX - panning.x) * sc;
+    view.y = panning.vy + (ev.clientY - panning.y) * sc;
+    applyView();
+  }
+});
+svg.addEventListener("pointerup", () => { drag = null; panning = null; });
+svg.addEventListener("wheel", ev => {
+  ev.preventDefault();
+  const b = svg.getBoundingClientRect(), sc = W / b.width;
+  const mx = (ev.clientX - b.left) * sc, my = (ev.clientY - b.top) * sc;
+  const f = ev.deltaY < 0 ? 1.12 : 0.89, nk = Math.min(4, Math.max(0.4, view.k * f));
+  view.x = mx - (mx - view.x) * (nk / view.k); view.y = my - (my - view.y) * (nk / view.k); view.k = nk;
+  applyView();
+}, { passive: false });
+document.getElementById("zin").addEventListener("click", () => { view.k = Math.min(4, view.k * 1.25); applyView(); });
+document.getElementById("zout").addEventListener("click", () => { view.k = Math.max(0.4, view.k / 1.25); applyView(); });
+document.getElementById("zfit").addEventListener("click", () => { view = { x: 0, y: 0, k: 1 }; applyView(); });
+
+const arr = Object.values(nodes);
+let running = false;
+function kick() { if (!running) { running = true; requestAnimationFrame(tick); } }
+function tick() {
+  for (let i = 0; i < arr.length; i++) for (let j = i + 1; j < arr.length; j++) {
+    const a = arr[i], b = arr[j];
+    let dx = a.x - b.x, dy = a.y - b.y, d2 = dx * dx + dy * dy;
+    if (d2 < 1) d2 = 1;
+    const f = 2600 / d2 * alpha, dd = Math.sqrt(d2);
+    dx /= dd; dy /= dd;
+    a.vx += dx * f; a.vy += dy * f; b.vx -= dx * f; b.vy -= dy * f;
+  }
+  DATA.edges.forEach(e => {
+    const a = nodes[e.s], b = nodes[e.t];
+    let dx = b.x - a.x, dy = b.y - a.y;
+    const d = Math.sqrt(dx * dx + dy * dy) || 1;
+    const rest = (a.cat === "hub" || b.cat === "hub") ? 85 : 125;
+    const f = (d - rest) * 0.0004 * alpha * d;
+    dx /= d; dy /= d;
+    a.vx += dx * f; a.vy += dy * f; b.vx -= dx * f; b.vy -= dy * f;
+  });
+  arr.forEach(n => {
+    n.vx += (W / 2 - n.x) * 0.0012 * alpha; n.vy += (H / 2 - n.y) * 0.0012 * alpha;
+    if (n !== drag) { n.x += n.vx; n.y += n.vy; }
+    n.vx *= 0.82; n.vy *= 0.82;
+    n.x = Math.max(36, Math.min(W - 36, n.x)); n.y = Math.max(30, Math.min(H - 34, n.y));
+  });
+  DATA.edges.forEach((e, i) => {
+    const a = nodes[e.s], b = nodes[e.t], p = eEls[i];
+    p.l.setAttribute("x1", a.x); p.l.setAttribute("y1", a.y); p.l.setAttribute("x2", b.x); p.l.setAttribute("y2", b.y);
+    p.h.setAttribute("x1", a.x); p.h.setAttribute("y1", a.y); p.h.setAttribute("x2", b.x); p.h.setAttribute("y2", b.y);
+  });
+  arr.forEach(n => {
+    if (n.cat === "hub") { n.sh.setAttribute("x", n.x - n.r); n.sh.setAttribute("y", n.y - n.r); }
+    else { n.sh.setAttribute("cx", n.x); n.sh.setAttribute("cy", n.y); }
+    const t = lEls[n.id]; t.setAttribute("x", n.x); t.setAttribute("y", n.y + n.r + 13);
+  });
+  alpha *= 0.997;
+  if (alpha > 0.004 || drag) requestAnimationFrame(tick); else running = false;
+}
+applyLang(); kick();
+</script>
