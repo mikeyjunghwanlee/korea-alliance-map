@@ -9,6 +9,7 @@
     --serif: Palatino, "Palatino Linotype", Georgia, "Apple SD Gothic Neo", serif;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   body { background: var(--bg); color: var(--ink); font: 15px/1.6 -apple-system, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", Helvetica, Arial, sans-serif; margin: 0; }
   a { color: var(--cu); text-decoration: none; }
   a:hover { text-decoration: underline; }
@@ -24,6 +25,17 @@
   .langsw button.on { background: var(--panel-2); color: var(--ink); }
   .langsw button:focus-visible { outline: 1px solid var(--ink-2); outline-offset: -1px; }
   .sub { color: var(--ink-2); font-size: 13px; margin: 6px 0 0; max-width: 70ch; }
+  .tabs { display: flex; gap: 4px; padding: 14px 0 0; }
+  .tab { background: none; border: 1px solid transparent; border-bottom: 2px solid transparent; border-radius: 7px 7px 0 0; color: var(--ink-3); font-size: 13.5px; font-family: inherit; padding: 7px 14px; cursor: pointer; }
+  .tab:hover, .tab:focus-visible { color: var(--ink-2); outline: none; }
+  .tab.on { color: var(--ink); border-bottom-color: var(--sc); }
+  .tab .count { font-family: var(--mono); font-size: 11px; color: var(--ink-3); margin-left: 6px; }
+  .newslist { padding: 4px 0 16px; }
+  .newslist .item { display: flex; gap: 12px; padding: 11px 2px; border-bottom: 1px solid var(--line); font-size: 14px; align-items: baseline; }
+  .newslist .item .nd { font-family: var(--mono); font-size: 11.5px; color: var(--sc); flex: none; }
+  .newslist .item a { color: var(--ink); }
+  .newslist .item a:hover { color: var(--cu); }
+  .newslist .empty { color: var(--ink-3); font-size: 13px; padding: 16px 2px; }
   .board { display: grid; grid-template-columns: 1fr 300px; gap: 16px; padding: 16px 0; }
   @media (max-width: 900px) { .board { grid-template-columns: 1fr; } }
   .stage { position: relative; background: var(--panel); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
@@ -83,7 +95,12 @@
 </header>
 
 <div class="wrap">
-  <div class="board">
+  <div class="tabs" role="tablist">
+    <button class="tab on" id="tab-map" role="tab" aria-selected="true"></button>
+    <button class="tab" id="tab-news" role="tab" aria-selected="false"></button>
+  </div>
+  <div class="newslist" id="newspanel" hidden></div>
+  <div class="board" id="mappanel">
     <div class="stage" id="stage">
       <svg id="net" viewBox="0 0 900 760" role="img" aria-label="Alliance network graph"></svg>
       <div class="zoombtns">
@@ -138,6 +155,7 @@ const L = {
     log: "Changelog", src: "Sources",
     hint: "drag nodes · scroll to zoom · drag background to pan",
     ties: "ties", clickFor: "Click for dossier", talks: "in talks",
+    tabMap: "Map", tabNews: "This week's news", newsEmpty: "No partnership news collected this week yet.",
     foot: "Compiled from public news reporting. Alliances marked as dashed lines are talks or pending deals, not signed agreements. Not investment advice.",
     et: { sc: "Stablecoin / payments", cu: "Custody", to: "Tokenization / STO", ma: "Acquisition / stake" },
     cat: { bank: "Bank / financial group", tech: "Tech / platform", pb: "Platform with banking arm", cn: "Crypto-native / infra", sec: "Securities / asset mgmt", gl: "Global partner", hub: "Consortium hub" }
@@ -151,6 +169,7 @@ const L = {
     log: "업데이트 기록", src: "출처",
     hint: "노드 드래그 · 스크롤 줌 · 배경 드래그로 이동",
     ties: "건", clickFor: "클릭하여 상세 보기", talks: "협의 중",
+    tabMap: "지도", tabNews: "이번 주 뉴스", newsEmpty: "이번 주 수집된 제휴 뉴스가 아직 없습니다.",
     foot: "공개 보도를 바탕으로 작성. 점선은 협의 중이거나 미확정 딜입니다. 투자 조언이 아닙니다.",
     et: { sc: "스테이블코인/결제", cu: "커스터디(수탁)", to: "토큰증권(STO)", ma: "인수/지분투자" },
     cat: { bank: "은행/금융그룹", tech: "테크/플랫폼", pb: "은행 보유 플랫폼", cn: "크립토 네이티브/인프라", sec: "증권/자산운용", gl: "글로벌 파트너", hub: "컨소시엄 허브" }
@@ -336,6 +355,12 @@ function applyLang() {
   document.getElementById("tFoot").textContent = T.foot;
   document.getElementById("lang-en").classList.toggle("on", lang === "en");
   document.getElementById("lang-ko").classList.toggle("on", lang === "ko");
+  const news = DATA.news || [];
+  document.getElementById("tab-map").textContent = T.tabMap;
+  document.getElementById("tab-news").innerHTML = esc(T.tabNews) + '<span class="count">' + news.length + "</span>";
+  document.getElementById("newspanel").innerHTML = news.length
+    ? news.map(n => '<div class="item"><span class="nd">[' + n.date + ']</span><a href="' + n.url + '" target="_blank" rel="noopener">' + esc(lang === "en" && n.titleEn ? n.titleEn : n.title) + "</a></div>").join("")
+    : '<div class="empty">' + T.newsEmpty + "</div>";
   document.getElementById("stamp").textContent = DATA.lastUpdated;
   document.getElementById("log").innerHTML = DATA.changelog.map(c => '<div class="entry"><span class="d">' + c.date + '</span><span class="n">' + esc(lang === "ko" && c.noteKo ? c.noteKo : c.note) + "</span></div>").join("");
   document.getElementById("srcs").innerHTML = DATA.sources.map(s => '<li><a href="' + s.url + '" target="_blank" rel="noopener">' + esc(s.title) + "</a></li>").join("");
@@ -346,6 +371,19 @@ function applyLang() {
 }
 document.getElementById("lang-en").addEventListener("click", () => { lang = "en"; localStorage.setItem("kmap-lang", "en"); applyLang(); });
 document.getElementById("lang-ko").addEventListener("click", () => { lang = "ko"; localStorage.setItem("kmap-lang", "ko"); applyLang(); });
+
+function setTab(which) {
+  const map = which === "map";
+  document.getElementById("mappanel").hidden = !map;
+  document.getElementById("newspanel").hidden = map;
+  document.getElementById("tab-map").classList.toggle("on", map);
+  document.getElementById("tab-news").classList.toggle("on", !map);
+  document.getElementById("tab-map").setAttribute("aria-selected", map);
+  document.getElementById("tab-news").setAttribute("aria-selected", !map);
+  if (map) kick();
+}
+document.getElementById("tab-map").addEventListener("click", () => setTab("map"));
+document.getElementById("tab-news").addEventListener("click", () => setTab("news"));
 
 document.getElementById("q").addEventListener("input", ev => { query = ev.target.value.trim().toLowerCase(); paint(); });
 
