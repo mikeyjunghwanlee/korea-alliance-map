@@ -23,7 +23,7 @@ Keep the alliance map and the "This week's news" tab current with news about Kor
    - Append any new `sources` (title + url); keep list under ~25 by pruning superseded ones.
 4. Build: `/usr/local/bin/node /Users/lt-145/Claude/Projects/korea-alliance-map/build.js` — must print the node/edge count without error.
 5. Redeploy with the Artifact tool: file `/Users/lt-145/Claude/Projects/korea-alliance-map/index.html`, favicon 🇰🇷, url https://claude.ai/code/artifact/96ca6662-6fa0-4764-8fd7-3351a12df857, label like "week-of-YYYY-MM-DD".
-6. Publish to the public site (GitHub Pages at https://mikeyjunghwanlee.github.io/korea-alliance-map/): from the project directory run `git add -A && git commit -m "Weekly update YYYY-MM-DD" && git push` (remote: github.com/mikeyjunghwanlee/korea-alliance-map, branch main). Pages rebuilds automatically on push.
+6. Publish to the public site (GitHub Pages at https://mikeyjunghwanlee.github.io/korea-alliance-map/): run `git -C /Users/lt-145/Claude/Projects/korea-alliance-map add -A`, then `git -C /Users/lt-145/Claude/Projects/korea-alliance-map commit -m "Daily update YYYY-MM-DD"`, then `git -C /Users/lt-145/Claude/Projects/korea-alliance-map push` (use the `git -C` form exactly — it is pre-approved for headless runs; `cd ... && git ...` chains will stall on a permission prompt). Pages rebuilds automatically on push.
 
 ## Guardrails
 - Public news only; never add non-public DSRV/deal information.

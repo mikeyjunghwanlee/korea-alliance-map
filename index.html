@@ -144,12 +144,14 @@
 
 <script>
 const DATA = {
-  "lastUpdated": "2026-07-07",
+  "lastUpdated": "2026-07-08",
   "news": [
     { "date": "2026-07-07", "title": "람다256, 케이뱅크·케이에스넷과 디지털자산 정산 오프램프·AML 검증 프로젝트 착수", "titleEn": "Lambda256 launches digital asset settlement off-ramp and AML verification project with KBank and KSNET", "url": "https://www.etoday.co.kr/news/view/2600883" },
     { "date": "2026-07-06", "title": "KT, 케이뱅크·BC카드와 '원화 스테이블코인' 만든다", "titleEn": "KT to create Korean won stablecoin with KBank and BC Card", "url": "https://zdnet.co.kr/view/?no=20260706143927" },
     { "date": "2026-07-06", "title": "신한은행 '슈퍼쏠'에 코인지갑 탑재", "titleEn": "Shinhan Bank to build a coin wallet into its Super SOL app", "url": "https://www.sedaily.com/article/20064313" },
-    { "date": "2026-07-06", "title": "안랩 K-STAR, BNK부산은행과 블록체인 기반 디지털 지역화폐 개념 검증", "titleEn": "AhnLab K-STAR and BNK Busan Bank complete PoC for blockchain-based digital regional currency", "url": "https://www.ajunews.com/view/20260706082757034" }
+    { "date": "2026-07-06", "title": "안랩 K-STAR, BNK부산은행과 블록체인 기반 디지털 지역화폐 개념 검증", "titleEn": "AhnLab K-STAR and BNK Busan Bank complete PoC for blockchain-based digital regional currency", "url": "https://www.ajunews.com/view/20260706082757034" },
+    { "date": "2026-07-03", "title": "\"우리가 회원사라고?\"… 삼성·두나무, 신생 스테이블코인 'OUSD' 참여 전면 부인 파문", "titleEn": "Samsung, Dunamu deny membership in new OUSD dollar-stablecoin consortium amid backlash", "url": "https://www.coinspeaker.com/kr/open-usd-ousd-stablecoin-consortium-korean-companies-controversy/" },
+    { "date": "2026-07-02", "title": "원화 스테이블코인 지연 속...韓 기업 13곳 달러 코인 연합 참여", "titleEn": "Amid won stablecoin delays, 13 Korean firms said to join dollar-stablecoin alliance OUSD", "url": "https://www.sedaily.com/article/20062649" }
   ],
   "nodes": [
     { "id": "kb", "label": "KB Financial", "labelKo": "KB금융", "cat": "bank", "desc": "KB Kookmin completed a won stablecoin pilot (May 2026); co-founded custody firm KODA; in issuance-plus-distribution talks with Toss.", "descKo": "KB국민, 2026년 5월 원화 스테이블코인 파일럿 완료; 커스터디사 KODA 공동 설립; 토스와 발행-유통 협의 중." },
@@ -214,7 +216,8 @@ const DATA = {
     { "id": "c8", "label": "8-bank consortium", "labelKo": "8개 은행 컨소시엄", "cat": "hub", "desc": "Eight banks jointly developing a shared won-pegged stablecoin: KB Kookmin, Shinhan, Woori, NH NongHyup, IBK, Suhyup, Citibank Korea, SC First.", "descKo": "8개 은행 공동 원화 스테이블코인 개발: KB국민, 신한, 우리, NH농협, IBK, Sh수협, 씨티, SC제일." },
     { "id": "unika", "label": "UniKA", "labelKo": "UniKA", "cat": "hub", "desc": "Bank alliance testing direct FX and real-time cross-border payments with European banks using stablecoins.", "descKo": "유럽 은행들과 스테이블코인 기반 직접 외환·실시간 국경 간 결제를 실증하는 은행 연합." },
     { "id": "nxt", "label": "NXT", "labelKo": "NXT", "cat": "hub", "desc": "Tokenized-securities trading platform with preliminary approval; a 50+ firm alliance; hosts the PULSE platform.", "descKo": "예비 인가를 받은 토큰증권 거래 플랫폼; 50여 개사 연합; PULSE 호스팅." },
-    { "id": "openstd", "label": "Open Standard", "labelKo": "오픈스탠다드", "cat": "hub", "desc": "Global stablecoin consortium including Visa, Mastercard, Google, Samsung Electronics and KBank.", "descKo": "비자, 마스터카드, 구글, 삼성전자, 케이뱅크가 참여하는 글로벌 스테이블코인 컨소시엄." }
+    { "id": "openstd", "label": "Open Standard", "labelKo": "오픈스탠다드", "cat": "hub", "desc": "Global consortium of ~140 firms (Visa, Mastercard, Stripe, Coinbase, BlackRock, Google, KBank) launching dollar stablecoin OUSD (Jul 2026); listed 13 Korean firms incl. Samsung Electronics and Dunamu as members, but Samsung and Dunamu publicly denied formal participation.", "descKo": "비자·마스터카드·스트라이프·코인베이스·블랙록·구글·케이뱅크 등 약 140개사가 참여해 달러 스테이블코인 OUSD를 추진(2026년 7월)하는 글로벌 컨소시엄; 삼성전자·두나무 등 한국 기업 13곳을 회원사로 발표했으나 삼성과 두나무는 공식 참여를 부인함." },
+    { "id": "kiwoom", "label": "Kiwoom Securities", "labelKo": "키움증권", "cat": "sec", "desc": "In early-stage talks to acquire a stake in Bithumb via third-party share issuance; still at the tapping stage, redisclosure due Jul 28, 2026.", "descKo": "제3자 배정 신주 발행 방식으로 빗썸 지분 인수를 초기 협의 중; 아직 의향 타진 단계, 2026년 7월 28일 재공시 예정." }
   ],
   "edges": [
     { "s": "c8", "t": "kb", "type": "sc", "solid": true, "desc": "Joint won-pegged stablecoin (8-bank consortium, mid-2025)", "descKo": "8개 은행 공동 원화 스테이블코인 (2025년 중반)" },
@@ -295,10 +298,12 @@ const DATA = {
     { "s": "kis", "t": "coinone", "type": "ma", "solid": true, "desc": "~20% stake; co-acquisition talks with OKX", "descKo": "지분 약 20%; OKX와 공동 인수 협의" },
     { "s": "okx", "t": "coinone", "type": "ma", "solid": true, "desc": "~20% stake via OKX Ventures", "descKo": "OKX벤처스 통해 지분 약 20%" },
     { "s": "com2us", "t": "coinone", "type": "ma", "solid": true, "desc": "Major shareholder", "descKo": "주요 주주" },
+    { "s": "kiwoom", "t": "bithumb", "type": "ma", "solid": false, "desc": "Stake acquisition talks via third-party share issuance (early stage, redisclosure due Jul 28, 2026)", "descKo": "제3자 배정 신주 발행 방식 지분 인수 협의 (초기 단계, 2026년 7월 28일 재공시 예정)" },
     { "s": "dsrv", "t": "kyobo", "type": "ma", "solid": true, "desc": "Strategic investment: stablecoin payment infra and validator-linked custody (Mar 2025)", "descKo": "전략적 투자: 스테이블코인 결제 인프라·밸리데이터 연계 수탁 (2025년 3월)" },
     { "s": "koscom", "t": "krx", "type": "ma", "solid": true, "desc": "KRX owns 76.6% of Koscom", "descKo": "한국거래소가 코스콤 지분 76.6% 보유" }
   ],
   "changelog": [
+    { "date": "2026-07-08", "note": "Added Kiwoom Securities' early-stage talks to acquire a Bithumb stake via third-party share issuance (redisclosure due Jul 28). Corrected the Open Standard node: Samsung Electronics and Dunamu were listed among 13 Korean 'member' firms of the OUSD dollar-stablecoin consortium but have publicly denied formal participation.", "noteKo": "키움증권의 제3자 배정 신주 발행을 통한 빗썸 지분 인수 초기 협의를 추가 (7월 28일 재공시 예정). 오픈스탠다드 노드 수정: 삼성전자·두나무가 OUSD 달러 스테이블코인 컨소시엄 회원사 13곳에 포함됐다고 발표됐으나 두 회사가 공식 참여를 부인함." },
     { "date": "2026-07-07", "note": "Added from Korean-language outlets: KT x KBank x BC Card won stablecoin for Southeast Asia, Lambda256 x KBank x KSNET off-ramp/AML PoC, AhnLab K-STAR x BNK Busan regional currency PoC (with OpenAsset, Kaia), Open Standard consortium, Shinhan Super SOL coin wallet plan. New: news tab; updates now daily.", "noteKo": "국내 매체 보도 반영: KT x 케이뱅크 x BC카드 동남아향 원화 스테이블코인, 람다256 x 케이뱅크 x 케이에스넷 오프램프/AML PoC, 안랩 K-STAR x BNK부산은행 지역화폐 PoC(오픈에셋·카이아 참여), 오픈스탠다드 컨소시엄, 신한 슈퍼쏠 코인지갑 계획. 뉴스 탭 신설; 업데이트 주기 매일로 변경." },
     { "date": "2026-07-06", "note": "Initial map: stablecoin consortia (8-bank, UniKA, Kakao, KB-Toss, Naver-Hana-Dunamu), four custody camps (KODA, KDAC, BDACS, BitGo Korea), STO platforms (NXT/PULSE, Koscom, Mirae, KB Securities x Canton), Canton MOUs with Shinhan, DSRV infrastructure ties.", "noteKo": "최초 지도: 스테이블코인 컨소시엄(8개 은행, UniKA, 카카오, KB-토스, 네이버-하나-두나무), 4대 커스터디 진영(KODA, KDAC, BDACS, 비트고코리아), STO 플랫폼(NXT/PULSE, 코스콤, 미래에셋, KB증권 x 칸톤), 신한-칸톤 MOU, DSRV 인프라 관계." }
   ],
@@ -320,7 +325,10 @@ const DATA = {
     { "title": "Finance Magnates - Mirae Asset Korbit takeover", "url": "https://www.financemagnates.com/cryptocurrency/exchange/mirae-assets-92m-korbit-takeover-signals-strategic-push-into-koreas-tokenized-market/" },
     { "title": "Cointelegraph - Fireblocks x NongHyup VAT tokenization", "url": "https://cointelegraph.com/news/fireblocks-nonghyup-bank-vat-tokenization" },
     { "title": "Seoulz - Korea won stablecoin 2026 race", "url": "https://www.seoulz.com/korea-won-stablecoin-2026/" },
-    { "title": "DigitalToday - digital asset alliances spread", "url": "https://www.digitaltoday.co.kr/en/view/75631/financial-sector-digital-asset-alliance-spreads-as-firms-build-infrastructure-ahead-of-regulation" }
+    { "title": "DigitalToday - digital asset alliances spread", "url": "https://www.digitaltoday.co.kr/en/view/75631/financial-sector-digital-asset-alliance-spreads-as-firms-build-infrastructure-ahead-of-regulation" },
+    { "title": "Seoul Economic Daily - 13 Korean firms join OUSD dollar stablecoin alliance", "url": "https://www.sedaily.com/article/20062649" },
+    { "title": "Coinspeaker Korea - Samsung, Dunamu deny OUSD membership", "url": "https://www.coinspeaker.com/kr/open-usd-ousd-stablecoin-consortium-korean-companies-controversy/" },
+    { "title": "ZDNet Korea - Kiwoom Securities in talks to acquire Bithumb stake", "url": "https://zdnet.co.kr/view/?no=20260629113210" }
   ]
 };
 
