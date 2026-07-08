@@ -1,10 +1,13 @@
 {
   "lastUpdated": "2026-07-08",
   "news": [
+    { "date": "2026-07-08", "title": "경찰청 '압수 가상자산 수탁사업자'에 두나무 선정", "titleEn": "National Police Agency selects Dunamu as custodian for seized crypto assets", "url": "https://zdnet.co.kr/view/?no=20260708104922" },
     { "date": "2026-07-07", "title": "람다256, 케이뱅크·케이에스넷과 디지털자산 정산 오프램프·AML 검증 프로젝트 착수", "titleEn": "Lambda256 launches digital asset settlement off-ramp and AML verification project with KBank and KSNET", "url": "https://www.etoday.co.kr/news/view/2600883" },
     { "date": "2026-07-06", "title": "KT, 케이뱅크·BC카드와 '원화 스테이블코인' 만든다", "titleEn": "KT to create Korean won stablecoin with KBank and BC Card", "url": "https://zdnet.co.kr/view/?no=20260706143927" },
     { "date": "2026-07-06", "title": "신한은행 '슈퍼쏠'에 코인지갑 탑재", "titleEn": "Shinhan Bank to build a coin wallet into its Super SOL app", "url": "https://www.sedaily.com/article/20064313" },
     { "date": "2026-07-06", "title": "안랩 K-STAR, BNK부산은행과 블록체인 기반 디지털 지역화폐 개념 검증", "titleEn": "AhnLab K-STAR and BNK Busan Bank complete PoC for blockchain-based digital regional currency", "url": "https://www.ajunews.com/view/20260706082757034" },
+    { "date": "2026-07-06", "title": "네이버파이낸셜·두나무 합병 또 연기...연말로", "titleEn": "Naver Financial-Dunamu merger postponed again, pushed to year-end", "url": "https://www.newspim.com/news/view/20260706001206" },
+    { "date": "2026-07-06", "title": "코인원, 한투·OKX·컴투스와 '4자 연합'...'글로벌 종합 금융 플랫폼으로 도약'", "titleEn": "Coinone publicly brands its Korea Investment Securities-OKX-Com2uS tie-up as a four-party alliance", "url": "https://www.viva100.com/article/20260604500642" },
     { "date": "2026-07-03", "title": "\"우리가 회원사라고?\"… 삼성·두나무, 신생 스테이블코인 'OUSD' 참여 전면 부인 파문", "titleEn": "Samsung, Dunamu deny membership in new OUSD dollar-stablecoin consortium amid backlash", "url": "https://www.coinspeaker.com/kr/open-usd-ousd-stablecoin-consortium-korean-companies-controversy/" },
     { "date": "2026-07-02", "title": "원화 스테이블코인 지연 속...韓 기업 13곳 달러 코인 연합 참여", "titleEn": "Amid won stablecoin delays, 13 Korean firms said to join dollar-stablecoin alliance OUSD", "url": "https://www.sedaily.com/article/20062649" }
   ],
@@ -25,7 +28,7 @@
     { "id": "kyobo", "label": "Kyobo Group", "labelKo": "교보", "cat": "bank", "desc": "Insurance-finance conglomerate; strategic investor in DSRV for stablecoin payment infra and validator-linked custody; Kyobo Securities is a KODA investor.", "descKo": "보험-금융 그룹; DSRV에 전략적 투자(스테이블코인 결제 인프라·밸리데이터 연계 수탁); 교보증권은 KODA 투자자." },
     { "id": "krx", "label": "KRX", "labelKo": "한국거래소", "cat": "bank", "desc": "Korea Exchange: building a secondary market for tokenized securities; owns 76.6% of Koscom; KDX tie-up with BDACS.", "descKo": "토큰증권 유통시장 구축; 코스콤 76.6% 보유; BDACS와 KDX 협력." },
     { "id": "bok", "label": "Bank of Korea", "labelKo": "한국은행", "cat": "bank", "desc": "Central bank: CBDC pilot Hangang, tokenized deposit trials, unified ledger vision; 51% banking rule for stablecoin issuers.", "descKo": "중앙은행: CBDC 파일럿 한강, 예금 토큰 실험, 통합원장 구상; 스테이블코인 발행사 은행 지분 51% 규제." },
-    { "id": "naver", "label": "Naver", "labelKo": "네이버", "cat": "tech", "desc": "Acquiring Dunamu (Upbit) in a US$10.3bn all-stock deal; forms the Naver-Dunamu-Hana won-stablecoin axis.", "descKo": "두나무(업비트)를 103억 달러 전량 주식교환으로 인수 중; 네이버-두나무-하나 원화 스테이블코인 축 형성." },
+    { "id": "naver", "label": "Naver", "labelKo": "네이버", "cat": "tech", "desc": "Acquiring Dunamu (Upbit) in a US$10.3bn all-stock deal; forms the Naver-Dunamu-Hana won-stablecoin axis. Merger timeline postponed a second time (shareholder vote to Nov 19, closing to Dec 31, 2026) amid a prolonged FTC review and unresolved Digital Asset Basic Act.", "descKo": "두나무(업비트)를 103억 달러 전량 주식교환으로 인수 중; 네이버-두나무-하나 원화 스테이블코인 축 형성. 공정위 심사 장기화와 디지털자산기본법 입법 지연으로 합병 일정 재차 연기(주주총회 11월 19일, 종결 2026년 12월 31일로 순연)." },
     { "id": "skt", "label": "SK Telecom", "labelKo": "SK텔레콤", "cat": "tech", "desc": "", "descKo": "" },
     { "id": "com2us", "label": "Com2uS", "labelKo": "컴투스", "cat": "tech", "desc": "", "descKo": "" },
     { "id": "lgcns", "label": "LG CNS", "labelKo": "LG CNS", "cat": "tech", "desc": "The build shop of Korean digital finance: Bank of Korea CBDC Hangang, Koscom unified STO platform, Mirae Asset STO platform.", "descKo": "한국 디지털 금융의 구축 파트너: 한국은행 CBDC 한강, 코스콤 통합 STO 플랫폼, 미래에셋 STO 플랫폼." },
@@ -43,7 +46,7 @@
     { "id": "kdac", "label": "KDAC", "labelKo": "KDAC", "cat": "cn", "desc": "Custodian with Shinhan Bank and NH NongHyup as major shareholders.", "descKo": "신한은행·NH농협이 주요 주주인 커스터디사." },
     { "id": "hashed", "label": "Hashed", "labelKo": "해시드", "cat": "cn", "desc": "", "descKo": "" },
     { "id": "wavebridge", "label": "Wavebridge", "labelKo": "웨이브릿지", "cat": "cn", "desc": "", "descKo": "" },
-    { "id": "coinone", "label": "Coinone", "labelKo": "코인원", "cat": "cn", "desc": "Exchange co-held by Korea Investment & Securities and OKX (~20% each); co-acquisition under discussion; Com2uS is a major shareholder.", "descKo": "한국투자증권·OKX가 각각 약 20% 보유한 거래소; 공동 인수 협의 중; 컴투스가 주요 주주." },
+    { "id": "coinone", "label": "Coinone", "labelKo": "코인원", "cat": "cn", "desc": "Exchange co-held by Korea Investment & Securities and OKX (~20% each); Com2uS is a major shareholder. Now publicly branded as a four-party alliance pursuing a comprehensive global financial platform, backed by a marketing campaign running through year-end 2026.", "descKo": "한국투자증권·OKX가 각각 약 20% 보유한 거래소; 컴투스가 주요 주주. 최근 4자 연합으로 공식 브랜딩하며 글로벌 종합 금융 플랫폼 도약을 표방; 2026년 연말까지 마케팅 캠페인 진행." },
     { "id": "korbit", "label": "Korbit", "labelKo": "코빗", "cat": "cn", "desc": "", "descKo": "" },
     { "id": "kaia", "label": "Kaia", "labelKo": "카이아", "cat": "cn", "desc": "L1 chain from the merger of Kakao Klaytn and LINE Finschia.", "descKo": "카카오 클레이튼과 라인 핀시아 합병으로 탄생한 L1 체인." },
     { "id": "dsrv", "label": "DSRV", "labelKo": "DSRV", "cat": "cn", "desc": "Blockchain infrastructure: validators, staking, DSRV Portal APIs. Kyobo strategic investment for stablecoin payments and validator-linked custody; partners with Circle, BC Card, SBI Ripple Asia; Canton validator (CBTC); Series B backed by SK Securities and IBK Capital.", "descKo": "블록체인 인프라: 밸리데이터, 스테이킹, DSRV Portal API. 교보의 전략적 투자(스테이블코인 결제·밸리데이터 연계 수탁); 서클·BC카드·SBI리플아시아 파트너; 칸톤 밸리데이터(CBTC); 시리즈B에 SK증권·IBK캐피탈 참여." },
@@ -62,7 +65,7 @@
     { "id": "ondo", "label": "Ondo", "labelKo": "온도", "cat": "gl", "desc": "", "descKo": "" },
     { "id": "canton", "label": "Canton Fdn", "labelKo": "칸톤 재단", "cat": "gl", "desc": "Canton Network governance body: MOUs with Shinhan Asset Management and Shinhan Investment & Securities; KB Securities DLT infra; DSRV runs Canton validators.", "descKo": "칸톤 네트워크 거버넌스 기구: 신한자산운용·신한투자증권과 MOU; KB증권 DLT 인프라; DSRV가 칸톤 밸리데이터 운영." },
     { "id": "fireblocks", "label": "Fireblocks", "labelKo": "파이어블록스", "cat": "gl", "desc": "", "descKo": "" },
-    { "id": "bitgo", "label": "BitGo", "labelKo": "비트고", "cat": "gl", "desc": "", "descKo": "" },
+    { "id": "bitgo", "label": "BitGo", "labelKo": "비트고", "cat": "gl", "desc": "BitGo Korea, its custody JV with Hana and SK Telecom, obtained ISMS certification (Jun 2026) as it advances toward a domestic custody license.", "descKo": "하나·SK텔레콤과의 커스터디 합작사 비트고코리아, 국내 수탁업 라이선스 취득 절차의 일환으로 ISMS 인증 획득 (2026년 6월)." },
     { "id": "okx", "label": "OKX", "labelKo": "OKX", "cat": "gl", "desc": "", "descKo": "" },
     { "id": "kwm", "label": "K Wave Media", "labelKo": "K웨이브미디어", "cat": "gl", "desc": "", "descKo": "" },
     { "id": "sbi", "label": "SBI Ripple Asia", "labelKo": "SBI리플아시아", "cat": "gl", "desc": "", "descKo": "" },
@@ -145,7 +148,7 @@
     { "s": "lgcns", "t": "bok", "type": "to", "solid": true, "desc": "CBDC Hangang platform development", "descKo": "CBDC 한강 플랫폼 개발" },
     { "s": "krx", "t": "bdacs", "type": "to", "solid": true, "desc": "KDX tokenized-securities market cooperation", "descKo": "KDX 토큰증권 시장 협력" },
     { "s": "dsrv", "t": "canton", "type": "to", "solid": true, "desc": "Canton validator operator (CBTC network)", "descKo": "칸톤 밸리데이터 운영 (CBTC 네트워크)" },
-    { "s": "naver", "t": "dunamu", "type": "ma", "solid": true, "desc": "US$10.3bn all-stock acquisition of Upbit operator Dunamu (Nov 2025, under FTC review)", "descKo": "업비트 운영사 두나무 103억 달러 전량 주식교환 인수 (2025년 11월, 공정위 심사 중)" },
+    { "s": "naver", "t": "dunamu", "type": "ma", "solid": true, "desc": "US$10.3bn all-stock acquisition of Upbit operator Dunamu (Nov 2025); closing pushed back a second time to Dec 31, 2026 amid FTC review", "descKo": "업비트 운영사 두나무 103억 달러 전량 주식교환 인수 (2025년 11월); 공정위 심사 지연으로 종결 시점 2026년 12월 31일로 재차 연기" },
     { "s": "hana", "t": "dunamu", "type": "ma", "solid": true, "desc": "6.55% stake, about 1tn won (May 2026)", "descKo": "지분 6.55%, 약 1조원 (2026년 5월)" },
     { "s": "hanwha", "t": "dunamu", "type": "ma", "solid": true, "desc": "Additional 3.90% Dunamu stake", "descKo": "두나무 지분 3.90% 추가 취득" },
     { "s": "samsung", "t": "dunamu", "type": "ma", "solid": true, "desc": "Combined 4.0% Dunamu stake (Samsung Securities + SDS + Card)", "descKo": "두나무 지분 합산 4.0% (삼성증권+SDS+카드)" },
@@ -158,7 +161,7 @@
     { "s": "koscom", "t": "krx", "type": "ma", "solid": true, "desc": "KRX owns 76.6% of Koscom", "descKo": "한국거래소가 코스콤 지분 76.6% 보유" }
   ],
   "changelog": [
-    { "date": "2026-07-08", "note": "Added Kiwoom Securities' early-stage talks to acquire a Bithumb stake via third-party share issuance (redisclosure due Jul 28). Corrected the Open Standard node: Samsung Electronics and Dunamu were listed among 13 Korean 'member' firms of the OUSD dollar-stablecoin consortium but have publicly denied formal participation.", "noteKo": "키움증권의 제3자 배정 신주 발행을 통한 빗썸 지분 인수 초기 협의를 추가 (7월 28일 재공시 예정). 오픈스탠다드 노드 수정: 삼성전자·두나무가 OUSD 달러 스테이블코인 컨소시엄 회원사 13곳에 포함됐다고 발표됐으나 두 회사가 공식 참여를 부인함." },
+    { "date": "2026-07-08", "note": "Added Kiwoom Securities' early-stage talks to acquire a Bithumb stake via third-party share issuance (redisclosure due Jul 28). Corrected the Open Standard node: Samsung Electronics and Dunamu were listed among 13 Korean 'member' firms of the OUSD dollar-stablecoin consortium but have publicly denied formal participation. Also added: National Police Agency selected Dunamu as its seized-crypto custodian; Naver-Dunamu merger closing postponed a second time to Dec 31, 2026; Coinone publicly branded its KIS-OKX-Com2uS tie-up as a four-party alliance; BitGo Korea obtained ISMS certification toward a custody license.", "noteKo": "키움증권의 제3자 배정 신주 발행을 통한 빗썸 지분 인수 초기 협의를 추가 (7월 28일 재공시 예정). 오픈스탠다드 노드 수정: 삼성전자·두나무가 OUSD 달러 스테이블코인 컨소시엄 회원사 13곳에 포함됐다고 발표됐으나 두 회사가 공식 참여를 부인함. 추가 반영: 경찰청 압수 가상자산 수탁사업자로 두나무 선정; 네이버-두나무 합병 종결 시점 2026년 12월 31일로 재차 연기; 코인원, 한투-OKX-컴투스 제휴를 4자 연합으로 공식 브랜딩; 비트고코리아 수탁 라이선스 취득 절차 중 ISMS 인증 획득." },
     { "date": "2026-07-07", "note": "Added from Korean-language outlets: KT x KBank x BC Card won stablecoin for Southeast Asia, Lambda256 x KBank x KSNET off-ramp/AML PoC, AhnLab K-STAR x BNK Busan regional currency PoC (with OpenAsset, Kaia), Open Standard consortium, Shinhan Super SOL coin wallet plan. New: news tab; updates now daily.", "noteKo": "국내 매체 보도 반영: KT x 케이뱅크 x BC카드 동남아향 원화 스테이블코인, 람다256 x 케이뱅크 x 케이에스넷 오프램프/AML PoC, 안랩 K-STAR x BNK부산은행 지역화폐 PoC(오픈에셋·카이아 참여), 오픈스탠다드 컨소시엄, 신한 슈퍼쏠 코인지갑 계획. 뉴스 탭 신설; 업데이트 주기 매일로 변경." },
     { "date": "2026-07-06", "note": "Initial map: stablecoin consortia (8-bank, UniKA, Kakao, KB-Toss, Naver-Hana-Dunamu), four custody camps (KODA, KDAC, BDACS, BitGo Korea), STO platforms (NXT/PULSE, Koscom, Mirae, KB Securities x Canton), Canton MOUs with Shinhan, DSRV infrastructure ties.", "noteKo": "최초 지도: 스테이블코인 컨소시엄(8개 은행, UniKA, 카카오, KB-토스, 네이버-하나-두나무), 4대 커스터디 진영(KODA, KDAC, BDACS, 비트고코리아), STO 플랫폼(NXT/PULSE, 코스콤, 미래에셋, KB증권 x 칸톤), 신한-칸톤 MOU, DSRV 인프라 관계." }
   ],
@@ -183,6 +186,9 @@
     { "title": "DigitalToday - digital asset alliances spread", "url": "https://www.digitaltoday.co.kr/en/view/75631/financial-sector-digital-asset-alliance-spreads-as-firms-build-infrastructure-ahead-of-regulation" },
     { "title": "Seoul Economic Daily - 13 Korean firms join OUSD dollar stablecoin alliance", "url": "https://www.sedaily.com/article/20062649" },
     { "title": "Coinspeaker Korea - Samsung, Dunamu deny OUSD membership", "url": "https://www.coinspeaker.com/kr/open-usd-ousd-stablecoin-consortium-korean-companies-controversy/" },
-    { "title": "ZDNet Korea - Kiwoom Securities in talks to acquire Bithumb stake", "url": "https://zdnet.co.kr/view/?no=20260629113210" }
+    { "title": "ZDNet Korea - Kiwoom Securities in talks to acquire Bithumb stake", "url": "https://zdnet.co.kr/view/?no=20260629113210" },
+    { "title": "ZDNet Korea - Police selects Dunamu as seized-crypto custodian", "url": "https://zdnet.co.kr/view/?no=20260708104922" },
+    { "title": "Newspim - Naver Financial-Dunamu merger delayed to year-end", "url": "https://www.newspim.com/news/view/20260706001206" },
+    { "title": "Viva100 - Coinone four-party alliance branding", "url": "https://www.viva100.com/article/20260604500642" }
   ]
 }
