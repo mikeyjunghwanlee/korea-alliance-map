@@ -1,29 +1,17 @@
 {
-  "lastUpdated": "2026-10-26",
+  "lastUpdated": "2026-11-02",
   "news": [
     {
-      "date": "2026-10-22",
-      "title": "Chainlink partners with LG CNS to drive Korean won stablecoin expansion",
-      "titleEn": "Chainlink partners with LG CNS to integrate its oracle and cross-chain stack into LG CNS digital asset platform for Korean won stablecoins and tokenized assets",
-      "url": "https://www.theblock.co/news/business/2026-10-22-chainlink-partners-with-lg-cns-423993"
+      "date": "2026-11-02",
+      "title": "미래에셋증권, 美 DTCC 토큰화 서비스 이용 계약 체결",
+      "titleEn": "Mirae Asset Securities New York signs on as an early user of the DTCC Tokenization Service, one of 20 launch institutions alongside JPMorgan, Morgan Stanley, BofA and Citi",
+      "url": "https://www.dtoday.co.kr/news/articleView.html?idxno=800756"
     },
     {
-      "date": "2026-10-21",
-      "title": "신한카드, 엔화 스테이블코인 결제 실증⋯SBI와 맞손",
-      "titleEn": "Shinhan Card teams up with SBI VC Trade and SBI XDC Network APAC on yen-stablecoin card payment, wallet-to-wallet and cross-border trade settlement PoCs",
-      "url": "https://www.etoday.co.kr/news/view/2638315"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "메리츠증권, 옵티미즘과 '토큰화 금융자산' 사업 협력",
-      "titleEn": "Meritz Securities signs an MOU with the Optimism Foundation to review issuing, settling and distributing tokenized Korean financial assets on OP Mainnet",
-      "url": "https://www.fnnews.com/news/202610210901434690"
-    },
-    {
-      "date": "2026-10-21",
-      "title": "인젝티브, 비댁스와 원화 스테이블코인 KRW1 도입 추진 MOU",
-      "titleEn": "Injective signs an MOU with BDACS to adopt the KRW1 won stablecoin as a settlement asset for onchain RWAs",
-      "url": "https://www.etoday.co.kr/news/view/2637477"
+      "date": "2026-10-30",
+      "title": "[STO 시대 개막] 뜨거운 토큰증권 시장 선점경쟁…대형사 거대연합군 vs 중소형사 틈새공략",
+      "titleEn": "STO era opens: large brokerages build mega-alliances while mid-size firms target niches in the race for Korea tokenized-securities market",
+      "url": "https://www.ajunews.com/view/20261030162510136"
     }
   ],
   "nodes": [
@@ -1729,8 +1717,8 @@
       "t": "gibs",
       "type": "to",
       "solid": true,
-      "desc": "Hong Kong digital bonds and global tokenization work",
-      "descKo": "홍콩 디지털 채권 및 글로벌 토큰화 협업"
+      "desc": "Hong Kong digital bonds and global tokenization work; Mirae Asset Securities New York signed on as one of 20 launch users of the DTCC Tokenization Service (DTS) on Canton Network and private Besu (announced Nov 2, 2026)",
+      "descKo": "홍콩 디지털 채권 및 글로벌 토큰화 협업; 미래에셋증권 뉴욕법인이 캔톤 네트워크·프라이빗 베수 기반 DTCC 토큰화 서비스(DTS) 출시 초기 이용 계약 20개사 중 하나로 참여 (2026년 11월 2일 발표)"
     },
     {
       "s": "mirae",
@@ -2711,6 +2699,11 @@
   ],
   "changelog": [
     {
+      "date": "2026-11-02",
+      "note": "Mirae Asset Securities New York signed a DTCC Tokenization Service (DTS) launch-user contract (announced Nov 2, 2026), folded into the existing mirae-gibs edge. Added an Ajunews Oct 30 feature on brokerage STO alliances to the news tab. No new progress found on Naver-Dunamu, Bithumb stake, Kakao/Toss consortium or KB-Toss threads. News tab trimmed to Oct 27-Nov 2.",
+      "noteKo": "미래에셋증권 뉴욕법인이 DTCC 토큰화 서비스(DTS) 초기 이용 계약 체결(2026년 11월 2일 발표), 기존 mirae-gibs 엣지에 반영. 증권사 토큰증권 연합 경쟁을 다룬 아주경제 10월 30일자 기획기사를 뉴스 탭에 추가. 네이버-두나무, 빗썸 지분, 카카오·토스 컨소시엄, KB-토스 관련 진전 없음. 뉴스 탭을 10월 27일~11월 2일 기준으로 정리."
+    },
+    {
       "date": "2026-10-26",
       "note": "New deal dated Oct 22, 2026: LG CNS and Chainlink announced a strategic partnership to integrate Chainlink oracle and CCIP cross-chain tools into the LG CNS digital asset platform for won stablecoins and tokenized assets (new edge lgcns-chainlink). No new progress found on Naver-Dunamu, Bithumb stake, Kakao/Toss consortium or Canton Korea threads. News tab trimmed to Oct 19-26.",
       "noteKo": "2026년 10월 22일자 신규 제휴: LG CNS와 체인링크가 원화 스테이블코인·토큰화 자산용 LG CNS 디지털자산 플랫폼에 체인링크 오라클·CCIP 크로스체인 기술을 통합하는 전략적 파트너십 발표(신규 엣지 lgcns-chainlink). 네이버-두나무, 빗썸 지분, 카카오·토스 컨소시엄, 캔톤 한국 관련 진전 없음. 뉴스 탭을 10월 19~26일 기준으로 정리."
@@ -2938,10 +2931,6 @@
   ],
   "sources": [
     {
-      "title": "DT.co.kr - Samsung Securities x BNY global financial infrastructure and digital-asset MOU",
-      "url": "https://www.dt.co.kr/article/12083571"
-    },
-    {
       "title": "MoneyToday - Shinhan Asset Management wins Canton Network Super Validator final approval",
       "url": "https://www.mt.co.kr/stock/2026/09/14/2026091410531767721"
     },
@@ -3036,6 +3025,10 @@
     {
       "title": "PR Newswire - Chainlink x LG CNS won-stablecoin and digital-asset infrastructure partnership",
       "url": "https://www.prnewswire.com/news-releases/chainlink-partners-with-lg-cns-to-power-koreas-digital-asset-market-302917379.html"
+    },
+    {
+      "title": "Ilgan Today - Mirae Asset Securities NY x DTCC Tokenization Service contract",
+      "url": "https://www.dtoday.co.kr/news/articleView.html?idxno=800756"
     }
   ]
 }
