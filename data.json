@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-09",
+  "lastUpdated": "2026-11-10",
   "news": [
     {
       "date": "2026-11-06",
@@ -18,12 +18,6 @@
       "title": "[단독] 네이버·두나무 기업결합, 18일 전원회의…이르면 이달 결론",
       "titleEn": "Exclusive: FTC to review Naver-Dunamu merger at Nov 18 full commission, decision possible this month",
       "url": "https://newsis.com/view/NISX20261104_0003854974"
-    },
-    {
-      "date": "2026-11-02",
-      "title": "미래에셋증권, 美 DTCC 토큰화 서비스 이용 계약 체결",
-      "titleEn": "Mirae Asset Securities New York signs on as an early user of the DTCC Tokenization Service, one of 20 launch institutions alongside JPMorgan, Morgan Stanley, BofA and Citi",
-      "url": "https://www.dtoday.co.kr/news/articleView.html?idxno=800756"
     }
   ],
   "nodes": [
@@ -488,8 +482,8 @@
       "label": "Hanwha Inv. Sec.",
       "labelKo": "한화투자증권",
       "cat": "sec",
-      "desc": "KODA investor; additional Dunamu stake; invested about 30bn won in Digital Asset Holdings (Canton Network operator) in Jul 2026, deepening an Apr 2026 MOU, alongside stakes in Xangle, Kresus and Securitize, positioning as a digital-asset specialist brokerage.",
-      "descKo": "KODA 투자자; 두나무 지분 추가 취득; 2026년 7월 디지털에셋홀딩스(캔톤 네트워크 운영사)에 약 300억원 투자(2026년 4월 MOU를 심화), 엑스앵글·크레서스·시큐리타이즈에도 투자하며 디지털자산 특화 증권사로 포지셔닝."
+      "desc": "KODA investor; additional Dunamu stake; invested about 30bn won in Digital Asset Holdings (Canton Network operator) in Jul 2026, deepening an Apr 2026 MOU, alongside stakes in Xangle, Kresus and Securitize, positioning as a digital-asset specialist brokerage. Signed a strategic partnership with Chainlink (Oct 30, 2026) for RWA tokenization and collateral infrastructure.",
+      "descKo": "KODA 투자자; 두나무 지분 추가 취득; 2026년 7월 디지털에셋홀딩스(캔톤 네트워크 운영사)에 약 300억원 투자(2026년 4월 MOU를 심화), 엑스앵글·크레서스·시큐리타이즈에도 투자하며 디지털자산 특화 증권사로 포지셔닝. 체인링크와 RWA 토큰화·담보 활용 인프라 전략적 파트너십 체결(2026년 10월 30일)."
     },
     {
       "id": "samsung",
@@ -2723,9 +2717,22 @@
       "solid": true,
       "desc": "MOU on on-chain financial data APIs and AI-agent payments: joint stablecoin payment and settlement APIs, first project an AI-agent API payment PoC (signed Nov 5, announced Nov 6, 2026)",
       "descKo": "온체인 금융 데이터 API 및 AI 에이전트 결제 협력 MOU: 스테이블코인 결제·정산 API 공동 개발, 첫 과제로 AI 에이전트 API 결제 PoC 추진 (2026년 11월 5일 체결, 6일 공개)"
+    },
+    {
+      "s": "hanwha",
+      "t": "chainlink",
+      "type": "to",
+      "solid": true,
+      "desc": "Strategic partnership: Hanwha Investment and Securities adopts Chainlink data standards and CCIP cross-chain tech as infrastructure for its global digital-asset platform, to tokenize high-grade real-world assets for global distribution and use as collateral; joint working group on institutional custody integration, RWA valuation and proof-of-reserve, and STO compliance (Oct 30, 2026)",
+      "descKo": "전략적 파트너십: 한화투자증권이 글로벌 디지털자산 플랫폼 인프라로 체인링크 데이터 표준과 CCIP 크로스체인 기술을 채택, 우량 실물자산을 토큰화해 글로벌 유통 및 담보로 활용할 기반 구축; 실무협의체를 통해 기관용 커스터디 연동, RWA 가치평가·준비금 검증, 토큰증권 컴플라이언스 기준 마련 (2026년 10월 30일)"
     }
   ],
   "changelog": [
+    {
+      "date": "2026-11-10",
+      "note": "Added a previously missed deal dated Oct 30, 2026: Hanwha Investment and Securities signed a strategic partnership with Chainlink to use its data standards and CCIP for RWA tokenization and collateral infrastructure (new edge hanwha-chainlink). No new signed alliances found for Nov 9-10; Naver-Dunamu still awaits the Nov 18 FTC full commission. No progress on Bithumb stake, Kakao/Toss consortium or KB-Toss threads. News tab trimmed to Nov 3-10.",
+      "noteKo": "놓쳤던 2026년 10월 30일자 제휴 추가: 한화투자증권이 체인링크와 전략적 파트너십을 맺고 데이터 표준·CCIP를 RWA 토큰화 및 담보 활용 인프라에 채택(신규 엣지 hanwha-chainlink). 11월 9~10일 신규 체결 제휴는 확인되지 않음; 네이버-두나무는 11월 18일 공정위 전원회의 대기 중. 빗썸 지분, 카카오·토스 컨소시엄, KB-토스 관련 진전 없음. 뉴스 탭을 11월 3~10일 기준으로 정리."
+    },
     {
       "date": "2026-11-09",
       "note": "DSRV signed an MOU with Coocon (Nov 5, 2026) on on-chain financial data APIs and AI-agent stablecoin payments (new node Coocon, edge dsrv-coocon). Naver-Dunamu edge updated: FTC reportedly set the merger review for its Nov 18 full commission, though the FTC says no outcome is decided. Added Aracore-Dozn stablecoin remittance MOU to the news tab. No new progress found on Bithumb stake, Kakao/Toss consortium or KB-Toss threads. News tab trimmed to Nov 2-9.",
@@ -2964,10 +2971,6 @@
   ],
   "sources": [
     {
-      "title": "Hankyung - Hana Securities x Upbit Global digital-asset business MOU",
-      "url": "https://www.hankyung.com/article/2026091428466"
-    },
-    {
       "title": "Edaily - BDACS x Rain partnership brings KRW1 won stablecoin onto the Visa merchant network",
       "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=03896646645580448"
     },
@@ -3062,6 +3065,10 @@
     {
       "title": "Asia Economy - Coocon x DSRV on-chain data and AI-agent payment MOU",
       "url": "https://view.asiae.co.kr/article/2026110609094430616"
+    },
+    {
+      "title": "SBS Biz - Hanwha Investment and Securities x Chainlink strategic partnership",
+      "url": "https://biz.sbs.co.kr/amp/article/20000343231"
     }
   ]
 }
