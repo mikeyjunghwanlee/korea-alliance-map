@@ -1,6 +1,12 @@
 {
-  "lastUpdated": "2026-11-18",
+  "lastUpdated": "2026-11-19",
   "news": [
+    {
+      "date": "2026-11-18",
+      "title": "엑셀라·에이판다파트너스, 한국 금융자산 해외 유통 추진…블록체인 인프라 공동 개발",
+      "titleEn": "Axelar and APanda Partners sign MOU to tokenize Korean financial assets for overseas distribution and co-develop blockchain infrastructure",
+      "url": "https://www.venturesquare.net/1129844"
+    },
     {
       "date": "2026-11-18",
       "title": "네이버·두나무 기업결합 오늘 심의…'계열사 우대 방지' 조건이 관건",
@@ -48,18 +54,6 @@
       "title": "DSRV, 타이거리서치와 맞손…디지털자산 수탁·토큰화 사업 확대",
       "titleEn": "DSRV teams up with Tiger Research to expand digital-asset custody and tokenization business",
       "url": "https://zdnet.co.kr/view/?no=20261113093050"
-    },
-    {
-      "date": "2026-11-11",
-      "title": "DB증권, 美 스피어와 스테이블코인 결제·정산 사업화 추진",
-      "titleEn": "DB Financial Investment partners with US-based Sphere to commercialize stablecoin payments and settlement",
-      "url": "https://www.newspim.com/news/view/20261111001153"
-    },
-    {
-      "date": "2026-11-11",
-      "title": "해외 거래소 韓 공략하는데…네이버·두나무 결합은 심사 지연",
-      "titleEn": "Foreign exchanges push into Korea while Naver-Dunamu merger review drags on",
-      "url": "https://view.asiae.co.kr/article/2026111110512477097"
     }
   ],
   "nodes": [
@@ -2826,6 +2820,11 @@
     }
   ],
   "changelog": [
+    {
+      "date": "2026-11-19",
+      "note": "News tab only: added the Axelar x APanda Partners MOU (Nov 18, 2026) to tokenize Korean financial assets such as loan receivables for overseas investors; kept off the graph pending a second-outlet confirmation. The FTC full commission met on Naver-Dunamu on Nov 18, but no decision has been announced. No progress on Bithumb stake, Kakao/Toss consortium or KB-Toss threads. News tab trimmed to Nov 12-18.",
+      "noteKo": "뉴스 탭만 갱신: 대출채권 등 한국 금융자산을 토큰화해 해외 투자자에게 유통하는 엑셀라 x 에이판다파트너스 MOU(2026년 11월 18일) 추가, 단일 매체 보도로 그래프 반영은 보류. 공정위 전원회의가 11월 18일 네이버-두나무 건을 심의했으나 결론은 미발표. 빗썸 지분, 카카오·토스 컨소시엄, KB-토스 관련 진전 없음. 뉴스 탭을 11월 12~18일 기준으로 정리."
+    },
     {
       "date": "2026-11-18",
       "note": "Added four signed MOUs from Nov 10-17, 2026: DB Financial Investment x Sphere Labs (token securities, RWA and stablecoin cross-border settlement), a three-way ITIZ x Wavebridge x Nodeinfra digital-asset wallet/custody alliance for financial institutions, and DSRV x Tiger Research (joint STO/RWA/custody PoCs and bids); new nodes Sphere Labs, ITIZ, Tiger Research. Naver-Dunamu edge updated: the FTC full commission deliberated the merger on Nov 18 with conditional approval expected but no decision announced yet. KB Securities x Suho.io bond-STO PoC and Galaxia Moneytree x Gwangju Bank remittance PoC added to the news tab only (single-outlet reports). No progress on Bithumb stake, Kakao/Toss consortium or KB-Toss threads. News tab trimmed to Nov 11-18.",
