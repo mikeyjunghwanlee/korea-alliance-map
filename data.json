@@ -1,59 +1,47 @@
 {
-  "lastUpdated": "2026-11-23",
+  "lastUpdated": "2026-11-26",
   "news": [
+    {
+      "date": "2026-11-25",
+      "title": "원화코인 발행권 은행에 열렸다…4대 금융 ‘시장 선점경쟁’ 본격화",
+      "titleEn": "Won-stablecoin issuance opens to banks; Korea's four big financial groups race to lock in the market",
+      "url": "https://www.g-enews.com/article/Finance/2026/11/202611251543581184e30fcb1ba8_1"
+    },
+    {
+      "date": "2026-11-25",
+      "title": "[단독] 가상자산 영토확장 노린다…금융사 절반 \"거래소 지분 인수할 것\"",
+      "titleEn": "Exclusive: Half of surveyed financial firms say they would buy stakes in crypto exchanges",
+      "url": "https://www.hankyung.com/article/2026112503211"
+    },
+    {
+      "date": "2026-11-24",
+      "title": "Naver Financial, Shinhan Bank Team Up on Won Stablecoin",
+      "titleEn": "Naver Financial and Shinhan Bank team up on a won stablecoin (Samsung Card and several banks reportedly join)",
+      "url": "https://en.sedaily.com/finance/2026/11/24/naver-financial-shinhan-bank-team-up-on-won-stablecoin"
+    },
+    {
+      "date": "2026-11-24",
+      "title": "'은행 4곳 15%씩·핀테크 한 곳 30%'…스테이블코인 컨소시엄 윤곽",
+      "titleEn": "Four banks at 15% each plus one fintech at 30%: the shape of won-stablecoin consortia emerges",
+      "url": "https://news.bizwatch.co.kr/article/finance/2026/11/24/0017"
+    },
+    {
+      "date": "2026-11-24",
+      "title": "ICO허용·스테이블코인 발행 문 열린다…'디지털자산법' 정부안 공개",
+      "titleEn": "FSC unveils Digital Asset Basic Act draft: domestic ICOs allowed, bank-majority consortia first to issue won stablecoins, exchange owner stakes capped at 20%",
+      "url": "https://zdnet.co.kr/view/?no=20261124131610"
+    },
+    {
+      "date": "2026-11-23",
+      "title": "피에코·에일릿, 실물 금 기반 STO MOU 체결",
+      "titleEn": "Pieco and Ailit sign MOU on physical-gold-backed token securities",
+      "url": "https://m.news.nate.com/view/20261123n05970"
+    },
     {
       "date": "2026-11-23",
       "title": "[단독] 정부안, 스테이블코인 발행 ‘핀테크도 1대 주주’ 길 열어뒀다",
       "titleEn": "Exclusive: Government draft leaves room for a fintech to be the largest shareholder of a won-stablecoin issuer (banks jointly hold a majority; FSC to unveil draft Nov 24)",
       "url": "https://seoul.co.kr/news/politics/2026/11/23/20261123500123"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "엑셀라·에이판다파트너스, 한국 금융자산 해외 유통 추진…블록체인 인프라 공동 개발",
-      "titleEn": "Axelar and APanda Partners sign MOU to tokenize Korean financial assets for overseas distribution and co-develop blockchain infrastructure",
-      "url": "https://www.venturesquare.net/1129844"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "네이버·두나무 기업결합 오늘 심의…'계열사 우대 방지' 조건이 관건",
-      "titleEn": "FTC deliberates Naver-Dunamu merger today; conditions to prevent affiliate self-preferencing are key",
-      "url": "https://www.blockmedia.co.kr/archives/1167277"
-    },
-    {
-      "date": "2026-11-18",
-      "title": "갤럭시아머니트리, 광주은행·효성 계열사와 한·일 스테이블코인 무역송금 실증",
-      "titleEn": "Galaxia Moneytree runs Korea-Japan stablecoin trade-remittance PoC with Gwangju Bank and Hyosung affiliates",
-      "url": "https://www.newspim.com/news/view/20261118000214"
-    },
-    {
-      "date": "2026-11-17",
-      "title": "아이티아이즈, 웨이브릿지·노드인프라와 디지털자산 사업 협력 MOU 체결",
-      "titleEn": "ITIZ signs digital-asset business MOU with Wavebridge and Nodeinfra",
-      "url": "https://www.newspim.com/news/view/20261117000333"
-    },
-    {
-      "date": "2026-11-17",
-      "title": "KB증권, 수호아이오와 채권 토큰증권 전주기 실증 완료",
-      "titleEn": "KB Securities completes full-lifecycle bond token-securities PoC with Suho.io",
-      "url": "https://www.g-enews.com/article/Securities/2026/11/202611170917516551923c501012_1"
-    },
-    {
-      "date": "2026-11-17",
-      "title": "네이버·두나무 기업결합 최종 시험대, '글로벌 신 시장 개척' 비전 수용될까",
-      "titleEn": "Naver-Dunamu merger faces final test: will the global new-market vision be accepted?",
-      "url": "https://newspim.com/news/view/20261117001187"
-    },
-    {
-      "date": "2026-11-16",
-      "title": "[디지털자산 2.0]코인거래소 인수부터 토큰화까지…증권사 디지털자산 쟁탈전",
-      "titleEn": "Digital Assets 2.0: from exchange acquisitions to tokenization, brokerages battle for digital assets",
-      "url": "https://view.asiae.co.kr/article/2026111613561403237"
-    },
-    {
-      "date": "2026-11-16",
-      "title": "South Korea Will Let Tech Platforms Lead Won Stablecoins From Behind A Bank Majority, While Taiwan Wants One Bank In Charge",
-      "titleEn": "South Korea will let tech platforms lead won stablecoins from behind a bank majority (FSC, Nov 12)",
-      "url": "https://www.forbes.com/sites/digital-assets/2026/11/16/south-korea-will-let-tech-platforms-lead-won-stablecoins-from-behind-a-bank-majority-while-taiwan-wants-one-bank-in-charge/"
     }
   ],
   "nodes": [
@@ -70,16 +58,16 @@
       "label": "Shinhan",
       "labelKo": "신한",
       "cat": "bank",
-      "desc": "The busiest connector: 8-bank consortium, UniKA, KDAC, PULSE STO platform with Lambda256 and NXT, Canton Foundation MOUs, Shinhan Card payment infra with Solana, Visa, Mastercard and Fireblocks. Building a coin wallet into the Super SOL app for won stablecoins, STO and RWA. Shinhan Asset Management signed an MOU with Plume Network (Aug 14, 2026) to pilot a won-denominated tokenized fund benchmarked on BlackRock's BUIDL model, then a separate four-party MOU with the Solana Foundation, Etherfuse and Orca (Aug 21, 2026) to run a technical PoC issuing and distributing that same won tokenized fund, covering KYC/AML, security audits, blockchain operations and onchain liquidity design. Separately, Shinhan Financial Group signed a strategic MOU with Visa (Aug 26, 2026) to jointly verify stablecoin issuance, remittance and redemption on Visa's platform, co-design a Korea-specific business model, and cooperate on AI-based payment and B2B/B2C business. Shinhan Card signed a three-way Web3 payments MOU with SBI VC Trade and SBI XDC Network APAC (Oct 20, Tokyo; announced Oct 21, 2026) to run yen-stablecoin PoCs for card payments by Japanese visitors, wallet-to-wallet payments and cross-border trade settlement.",
-      "descKo": "가장 바쁜 연결고리: 8개 은행 컨소시엄, UniKA, KDAC, 람다256·NXT와 PULSE STO 플랫폼, 칸톤 재단 MOU, 신한카드 결제 인프라(솔라나·비자·마스터카드·파이어블록스). 슈퍼쏠 앱에 원화 스테이블코인·STO·RWA 지원 코인지갑 탑재 추진. 신한자산운용은 플룸 네트워크와 MOU 체결(2026년 8월 14일)해 블랙록 BUIDL 모델을 벤치마크한 원화 표시 토큰화 펀드 실증 추진, 이어 솔라나 재단·이더퓨즈·오르카와 별도 4자 MOU 체결(2026년 8월 21일)해 동일한 원화 토큰화 펀드의 발행-유통 기술검증(KYC/AML, 보안감사, 블록체인 운영, 온체인 유동성 설계) PoC 추진. 이와 별도로 신한금융그룹은 비자와 전략적 업무협약 체결(2026년 8월 26일), 비자 플랫폼 기반 스테이블코인 발행, 송금, 상환 공동 검증과 한국형 사업모델 설계, AI 결제 및 B2B, B2C 사업 협력을 추진. 신한카드가 SBI VC트레이드·SBI XDC 네트워크 APAC와 웹3 결제 3자 MOU 체결(10월 20일 도쿄, 2026년 10월 21일 발표), 일본인 방문객 카드 결제·지갑 간 결제·국경 간 무역대금 정산 등 엔화 스테이블코인 PoC 추진."
+      "desc": "The busiest connector: 8-bank consortium, UniKA, KDAC, PULSE STO platform with Lambda256 and NXT, Canton Foundation MOUs, Shinhan Card payment infra with Solana, Visa, Mastercard and Fireblocks. Building a coin wallet into the Super SOL app for won stablecoins, STO and RWA. Shinhan Asset Management signed an MOU with Plume Network (Aug 14, 2026) to pilot a won-denominated tokenized fund benchmarked on BlackRock's BUIDL model, then a separate four-party MOU with the Solana Foundation, Etherfuse and Orca (Aug 21, 2026) to run a technical PoC issuing and distributing that same won tokenized fund, covering KYC/AML, security audits, blockchain operations and onchain liquidity design. Separately, Shinhan Financial Group signed a strategic MOU with Visa (Aug 26, 2026) to jointly verify stablecoin issuance, remittance and redemption on Visa's platform, co-design a Korea-specific business model, and cooperate on AI-based payment and B2B/B2C business. Shinhan Card signed a three-way Web3 payments MOU with SBI VC Trade and SBI XDC Network APAC (Oct 20, Tokyo; announced Oct 21, 2026) to run yen-stablecoin PoCs for card payments by Japanese visitors, wallet-to-wallet payments and cross-border trade settlement. After the Nov 24, 2026 government draft, Shinhan was reported to be building a won-stablecoin consortium with Naver Financial and Samsung Card, and discussing bank partners such as IBK, NH NongHyup and K Bank; Shinhan declined to confirm participants.",
+      "descKo": "가장 바쁜 연결고리: 8개 은행 컨소시엄, UniKA, KDAC, 람다256·NXT와 PULSE STO 플랫폼, 칸톤 재단 MOU, 신한카드 결제 인프라(솔라나·비자·마스터카드·파이어블록스). 슈퍼쏠 앱에 원화 스테이블코인·STO·RWA 지원 코인지갑 탑재 추진. 신한자산운용은 플룸 네트워크와 MOU 체결(2026년 8월 14일)해 블랙록 BUIDL 모델을 벤치마크한 원화 표시 토큰화 펀드 실증 추진, 이어 솔라나 재단·이더퓨즈·오르카와 별도 4자 MOU 체결(2026년 8월 21일)해 동일한 원화 토큰화 펀드의 발행-유통 기술검증(KYC/AML, 보안감사, 블록체인 운영, 온체인 유동성 설계) PoC 추진. 이와 별도로 신한금융그룹은 비자와 전략적 업무협약 체결(2026년 8월 26일), 비자 플랫폼 기반 스테이블코인 발행, 송금, 상환 공동 검증과 한국형 사업모델 설계, AI 결제 및 B2B, B2C 사업 협력을 추진. 신한카드가 SBI VC트레이드·SBI XDC 네트워크 APAC와 웹3 결제 3자 MOU 체결(10월 20일 도쿄, 2026년 10월 21일 발표), 일본인 방문객 카드 결제·지갑 간 결제·국경 간 무역대금 정산 등 엔화 스테이블코인 PoC 추진. 2026년 11월 24일 정부안 공개 후 신한이 네이버파이낸셜·삼성카드와 원화 스테이블코인 컨소시엄을 꾸리고 IBK기업·NH농협·케이뱅크 등 은행 파트너와 논의 중인 것으로 보도됨; 신한 측은 참여기관 확인을 거부."
     },
     {
       "id": "hana",
       "label": "Hana Financial",
       "labelKo": "하나금융",
       "cat": "bank",
-      "desc": "6.55% Dunamu stake (~1tn won); BitGo Korea custody JV with SK Telecom; STO mainnet with Mirae Asset; NXT backer; part of the Naver-Dunamu axis. Signed a three-way MOU with Abu Dhabi Global Market (ADGM) and Hanwha Asset Management (Sep 16, 2026) to jointly explore stablecoin/digital-asset payment infrastructure and cross-border remittance between Korea and the UAE. Hana Card and Hana Bank signed a three-way stablecoin MOU with Tether (Oct 1, 2026).",
-      "descKo": "두나무 지분 6.55%(약 1조원); SK텔레콤과 비트고코리아 커스터디 합작; 미래에셋과 STO 메인넷; NXT 참여; 네이버-두나무 축의 일원. ADGM(아부다비 글로벌 마켓)·한화자산운용과 3자 업무협약 체결(2026년 9월 16일), 한국-UAE 간 스테이블코인·디지털자산 결제 인프라 및 국경 간 송금 협력 모색. 하나카드·하나은행이 테더와 스테이블코인 3자 MOU 체결(2026년 10월 1일)."
+      "desc": "6.55% Dunamu stake (~1tn won); BitGo Korea custody JV with SK Telecom; STO mainnet with Mirae Asset; NXT backer; part of the Naver-Dunamu axis. Signed a three-way MOU with Abu Dhabi Global Market (ADGM) and Hanwha Asset Management (Sep 16, 2026) to jointly explore stablecoin/digital-asset payment infrastructure and cross-border remittance between Korea and the UAE. Hana Card and Hana Bank signed a three-way stablecoin MOU with Tether (Oct 1, 2026). After the Nov 24, 2026 government draft, Hana was reported to be in won-stablecoin consortium talks with BNK, iM, SC First Bank and OK Savings Bank.",
+      "descKo": "두나무 지분 6.55%(약 1조원); SK텔레콤과 비트고코리아 커스터디 합작; 미래에셋과 STO 메인넷; NXT 참여; 네이버-두나무 축의 일원. ADGM(아부다비 글로벌 마켓)·한화자산운용과 3자 업무협약 체결(2026년 9월 16일), 한국-UAE 간 스테이블코인·디지털자산 결제 인프라 및 국경 간 송금 협력 모색. 하나카드·하나은행이 테더와 스테이블코인 3자 MOU 체결(2026년 10월 1일). 2026년 11월 24일 정부안 공개 후 하나가 BNK·iM·SC제일은행·OK저축은행과 원화 스테이블코인 컨소시엄을 협의 중인 것으로 보도됨."
     },
     {
       "id": "woori",
@@ -190,8 +178,8 @@
       "label": "Naver",
       "labelKo": "네이버",
       "cat": "tech",
-      "desc": "Acquiring Dunamu (Upbit) in a US$10.3bn all-stock deal; forms the Naver-Dunamu-Hana won-stablecoin axis. Merger timeline postponed a second time (shareholder vote to Nov 19, closing to Dec 31, 2026) amid a prolonged FTC review and unresolved Digital Asset Basic Act. A presidential regulatory-reform committee recommended easing the strict shareholder-eligibility rule that had threatened Naver's qualification (Jul 24, 2026), removing one hurdle toward the Dec 31 closing; the FTC then said (Jul 31, 2026) it aims to complete its merger review within this year, further easing uncertainty around the deal. The enforcement-decree amendment implementing that eligibility exception cleared Financial Intelligence Unit review without objection and entered final Legal Affairs Bureau review (Jul 30, 2026); the Financial Services Commission then formally approved the amendment on Aug 11, 2026, with the rule taking effect Aug 20, 2026, clearing the last regulatory hurdle ahead of the Dec 31 merger closing.",
-      "descKo": "두나무(업비트)를 103억 달러 전량 주식교환으로 인수 중; 네이버-두나무-하나 원화 스테이블코인 축 형성. 공정위 심사 장기화와 디지털자산기본법 입법 지연으로 합병 일정 재차 연기(주주총회 11월 19일, 종결 2026년 12월 31일로 순연). 대통령 직속 규제합리화위원회가 네이버의 자격 취득을 위협하던 대주주 적격성 규정 완화를 권고(2026년 7월 24일), 12월 31일 종결을 향한 걸림돌 하나가 완화됨; 이어 공정위가 연내 기업결합 심사 완료 방침을 밝혀(2026년 7월 31일) 불확실성이 한층 완화됨. 해당 적격성 예외를 담은 시행령 개정안은 금융정보분석원(FIU) 검토를 이견 없이 통과해 법제처 심사 단계에 진입(2026년 7월 30일); 금융위원회가 8월 11일 해당 개정안을 최종 승인해 8월 20일 시행 예정, 12월 31일 합병 종결을 향한 마지막 규제 걸림돌이 해소됨."
+      "desc": "Acquiring Dunamu (Upbit) in a US$10.3bn all-stock deal; forms the Naver-Dunamu-Hana won-stablecoin axis. Merger timeline postponed a second time (shareholder vote to Nov 19, closing to Dec 31, 2026) amid a prolonged FTC review and unresolved Digital Asset Basic Act. A presidential regulatory-reform committee recommended easing the strict shareholder-eligibility rule that had threatened Naver's qualification (Jul 24, 2026), removing one hurdle toward the Dec 31 closing; the FTC then said (Jul 31, 2026) it aims to complete its merger review within this year, further easing uncertainty around the deal. The enforcement-decree amendment implementing that eligibility exception cleared Financial Intelligence Unit review without objection and entered final Legal Affairs Bureau review (Jul 30, 2026); the Financial Services Commission then formally approved the amendment on Aug 11, 2026, with the rule taking effect Aug 20, 2026, clearing the last regulatory hurdle ahead of the Dec 31 merger closing. After the FSC published the Digital Asset Basic Act draft (Nov 24, 2026), which lets a fintech be the largest single shareholder of a bank-majority won-stablecoin issuer, Naver Financial was reported to be running a won-stablecoin working group with Shinhan Bank, Samsung Card and other banks; Naver Financial says no consortium is finalized.",
+      "descKo": "두나무(업비트)를 103억 달러 전량 주식교환으로 인수 중; 네이버-두나무-하나 원화 스테이블코인 축 형성. 공정위 심사 장기화와 디지털자산기본법 입법 지연으로 합병 일정 재차 연기(주주총회 11월 19일, 종결 2026년 12월 31일로 순연). 대통령 직속 규제합리화위원회가 네이버의 자격 취득을 위협하던 대주주 적격성 규정 완화를 권고(2026년 7월 24일), 12월 31일 종결을 향한 걸림돌 하나가 완화됨; 이어 공정위가 연내 기업결합 심사 완료 방침을 밝혀(2026년 7월 31일) 불확실성이 한층 완화됨. 해당 적격성 예외를 담은 시행령 개정안은 금융정보분석원(FIU) 검토를 이견 없이 통과해 법제처 심사 단계에 진입(2026년 7월 30일); 금융위원회가 8월 11일 해당 개정안을 최종 승인해 8월 20일 시행 예정, 12월 31일 합병 종결을 향한 마지막 규제 걸림돌이 해소됨. 금융위가 은행 과반 지분 원화 스테이블코인 발행사에서 핀테크가 단일 최대주주가 될 수 있도록 한 디지털자산기본법 정부안을 공개(2026년 11월 24일)한 뒤, 네이버파이낸셜이 신한은행·삼성카드 등과 원화 스테이블코인 워킹그룹을 운영 중인 것으로 보도됨; 네이버파이낸셜은 확정된 컨소시엄은 없다고 밝힘."
     },
     {
       "id": "skt",
@@ -526,8 +514,8 @@
       "label": "Samsung Sec/SDS/Card",
       "labelKo": "삼성증권/SDS/카드",
       "cat": "sec",
-      "desc": "Samsung Securities, SDS and Card jointly hold a Dunamu stake; Samsung SDS is building KSD's tokenized-securities management platform (contract won May 2026, due Feb 2027). Samsung Securities signed a comprehensive MOU with global custody bank BNY at BNY's New York HQ (Sep 10, 2026) to upgrade equity brokerage, clearing, securities-collateral management and financing infrastructure, and to extend cooperation into AI and digital assets, though scope and timing of any BNY digital-asset platform use remain for follow-up talks.",
-      "descKo": "삼성증권·SDS·카드가 두나무 지분 공동 보유; 삼성SDS는 한국예탁결제원의 토큰증권 관리 플랫폼 구축을 수주(2026년 5월 수주, 2027년 2월 완료 목표). 삼성증권은 글로벌 커스터디은행 BNY 뉴욕 본사에서 포괄적 업무협약 체결(2026년 9월 10일), 주식 브로커리지·청산·증권 담보관리·파이낸싱 등 전통 인프라를 고도화하고 AI·디지털자산 분야로 협력을 확대하기로 함; BNY 디지털자산 플랫폼 적용 범위·일정은 후속 협의로 구체화할 예정."
+      "desc": "Samsung Securities, SDS and Card jointly hold a Dunamu stake; Samsung SDS is building KSD's tokenized-securities management platform (contract won May 2026, due Feb 2027). Samsung Securities signed a comprehensive MOU with global custody bank BNY at BNY's New York HQ (Sep 10, 2026) to upgrade equity brokerage, clearing, securities-collateral management and financing infrastructure, and to extend cooperation into AI and digital assets, though scope and timing of any BNY digital-asset platform use remain for follow-up talks. Samsung Card was reported (Nov 24-25, 2026) to have joined the Naver Financial-Shinhan won-stablecoin working group.",
+      "descKo": "삼성증권·SDS·카드가 두나무 지분 공동 보유; 삼성SDS는 한국예탁결제원의 토큰증권 관리 플랫폼 구축을 수주(2026년 5월 수주, 2027년 2월 완료 목표). 삼성증권은 글로벌 커스터디은행 BNY 뉴욕 본사에서 포괄적 업무협약 체결(2026년 9월 10일), 주식 브로커리지·청산·증권 담보관리·파이낸싱 등 전통 인프라를 고도화하고 AI·디지털자산 분야로 협력을 확대하기로 함; BNY 디지털자산 플랫폼 적용 범위·일정은 후속 협의로 구체화할 예정. 삼성카드가 네이버파이낸셜-신한은행 원화 스테이블코인 워킹그룹에 합류한 것으로 보도됨 (2026년 11월 24~25일)."
     },
     {
       "id": "circle",
@@ -1359,8 +1347,8 @@
       "t": "toss",
       "type": "sc",
       "solid": false,
-      "desc": "Stablecoin talks: KB Kookmin issues, Toss distributes",
-      "descKo": "스테이블코인 협의: KB국민 발행, 토스 유통"
+      "desc": "Stablecoin talks: KB Kookmin issues, Toss distributes; after the Nov 24, 2026 government draft, KB is reportedly widening the consortium talks to NH NongHyup, IBK, BNK and iM Bank (no consortium confirmed)",
+      "descKo": "스테이블코인 협의: KB국민 발행, 토스 유통; 2026년 11월 24일 정부안 공개 후 KB가 NH농협·IBK기업·BNK·iM뱅크로 컨소시엄 협의를 넓히고 있는 것으로 보도 (컨소시엄 확정 없음)"
     },
     {
       "s": "kakao",
@@ -2817,9 +2805,62 @@
       "solid": true,
       "desc": "MOU combining Tiger Research digital-asset research and on-chain analytics with DSRV wallet, custody and tokenization infrastructure for joint financial-institution PoCs and bids (Nov 12, 2026)",
       "descKo": "타이거리서치의 디지털자산 리서치·온체인 분석과 DSRV의 지갑·수탁·토큰화 인프라를 결합해 금융기관 대상 PoC 및 공동 입찰 추진 MOU (2026년 11월 12일)"
+    },
+    {
+      "s": "naver",
+      "t": "shinhan",
+      "type": "sc",
+      "solid": false,
+      "desc": "Naver Financial and Shinhan Bank reportedly running a won-stablecoin working group, with Samsung Card and other banks joining (Nov 24-25, 2026); Naver Financial says no consortium or business structure is finalized",
+      "descKo": "네이버파이낸셜과 신한은행이 원화 스테이블코인 워킹그룹을 운영 중이며 삼성카드 등 금융사도 합류한 것으로 보도 (2026년 11월 24~25일); 네이버파이낸셜은 컨소시엄 출범이나 사업구조가 확정된 단계는 아니라고 밝힘"
+    },
+    {
+      "s": "naver",
+      "t": "samsung",
+      "type": "sc",
+      "solid": false,
+      "desc": "Samsung Card reportedly joined the Naver Financial-Shinhan won-stablecoin working group (Nov 24-25, 2026); not confirmed by the companies",
+      "descKo": "삼성카드가 네이버파이낸셜-신한은행 원화 스테이블코인 워킹그룹에 합류한 것으로 보도 (2026년 11월 24~25일); 회사 측 공식 확인은 없음"
+    },
+    {
+      "s": "hana",
+      "t": "bnk",
+      "type": "sc",
+      "solid": false,
+      "desc": "Hana Financial reportedly in won-stablecoin consortium talks with BNK, iM, SC First Bank and OK Savings Bank after the Nov 24, 2026 government draft required bank-majority issuers",
+      "descKo": "2026년 11월 24일 정부안이 은행 과반 지분 발행사를 요건으로 제시한 뒤 하나금융이 BNK·iM·SC제일은행·OK저축은행과 원화 스테이블코인 컨소시엄을 협의 중인 것으로 보도"
+    },
+    {
+      "s": "hana",
+      "t": "im",
+      "type": "sc",
+      "solid": false,
+      "desc": "Hana Financial reportedly in won-stablecoin consortium talks with iM Financial (alongside BNK, SC First Bank and OK Savings Bank, Nov 2026)",
+      "descKo": "하나금융이 iM금융과 원화 스테이블코인 컨소시엄 협의 중인 것으로 보도 (BNK·SC제일은행·OK저축은행과 함께, 2026년 11월)"
+    },
+    {
+      "s": "hana",
+      "t": "scfirst",
+      "type": "sc",
+      "solid": false,
+      "desc": "Hana Financial reportedly in won-stablecoin consortium talks with SC First Bank (alongside BNK, iM and OK Savings Bank, Nov 2026)",
+      "descKo": "하나금융이 SC제일은행과 원화 스테이블코인 컨소시엄 협의 중인 것으로 보도 (BNK·iM·OK저축은행과 함께, 2026년 11월)"
+    },
+    {
+      "s": "shinhan",
+      "t": "kbank",
+      "type": "sc",
+      "solid": false,
+      "desc": "Shinhan Financial reportedly discussing a won-stablecoin consortium with K Bank (also IBK and NH NongHyup, Nov 2026); Shinhan declined to confirm participants",
+      "descKo": "신한금융이 케이뱅크와 원화 스테이블코인 컨소시엄을 논의 중인 것으로 보도 (IBK기업은행·NH농협은행도 거론, 2026년 11월); 신한 측은 참여기관 확인을 거부"
     }
   ],
   "changelog": [
+    {
+      "date": "2026-11-26",
+      "note": "The FSC unveiled the Digital Asset Basic Act draft (Nov 24, 2026): bank-majority consortia issue won stablecoins first, a fintech may be the largest single shareholder, exchange owner stakes are capped at 20%. Added six dashed won-stablecoin talks edges reported Nov 24-25: Naver Financial with Shinhan and Samsung Card; Hana with BNK, iM and SC First; Shinhan with K Bank. KB-Toss talks reportedly widened to NH, IBK, BNK and iM. None is confirmed by the companies. No FTC decision yet on Naver-Dunamu. News tab trimmed to Nov 19-25.",
+      "noteKo": "금융위가 디지털자산기본법 정부안을 공개(2026년 11월 24일): 은행 과반 컨소시엄부터 원화 스테이블코인 발행 허용, 핀테크의 단일 최대주주 허용, 거래소 대주주 지분 20% 상한. 11월 24~25일 보도된 원화 스테이블코인 협의 점선 엣지 6개 추가: 네이버파이낸셜-신한·삼성카드, 하나-BNK·iM·SC제일, 신한-케이뱅크. KB-토스 협의는 NH·IBK·BNK·iM으로 확대된 것으로 보도. 모두 회사 측 확정 발표는 없음. 네이버-두나무 공정위 결론은 아직 미발표. 뉴스 탭을 11월 19~25일 기준으로 정리."
+    },
     {
       "date": "2026-11-23",
       "note": "News tab only: added a Seoul Shinmun report (Nov 23, 2026) that the government Digital Asset Basic Act draft lets a fintech be the largest single shareholder of a won-stablecoin issuer while banks jointly hold a majority; the FSC is expected to unveil the draft on Nov 24. No new signed alliances found for Nov 19-23; no FTC decision announced yet on Naver-Dunamu; no progress on Bithumb stake, Kakao/Toss consortium or KB-Toss threads. News tab trimmed to Nov 16-23.",
@@ -3078,14 +3119,6 @@
   ],
   "sources": [
     {
-      "title": "News2Day - Shinhan Asset Management x Plume Network tokenized-fund MOU",
-      "url": "https://www.news2day.co.kr/article/20260814500140"
-    },
-    {
-      "title": "BusinessPost - Shinhan Asset Management x Solana Foundation x Etherfuse x Orca tokenized-fund PoC MOU",
-      "url": "https://www.businesspost.co.kr/BP?command=article_view&num=445361"
-    },
-    {
       "title": "MoneyToday - Suhyup Bank secures 14.95% stake in custodian Infinite Block",
       "url": "https://www.mt.co.kr/finance/2026/08/20/2026082016420714958"
     },
@@ -3176,6 +3209,14 @@
     {
       "title": "ZDNet Korea - DSRV x Tiger Research MOU",
       "url": "https://zdnet.co.kr/view/?no=20261113093050"
+    },
+    {
+      "title": "ZDNet Korea - FSC unveils Digital Asset Basic Act government draft",
+      "url": "https://zdnet.co.kr/view/?no=20261124131610"
+    },
+    {
+      "title": "Seoul Economic Daily - Naver Financial x Shinhan Bank won-stablecoin working group",
+      "url": "https://en.sedaily.com/finance/2026/11/24/naver-financial-shinhan-bank-team-up-on-won-stablecoin"
     }
   ]
 }
